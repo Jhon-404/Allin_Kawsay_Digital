@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Pallpata | primeros auxilios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecera">
+        <a href="index.html" class="boton-cabecera"> 
+            <img src="logosinfnd.png" alt="Logo Salud Pallpata" class="logo-img">
+        </a>
+        <a href="primeros_auxilios_es.html" class="boton-cabecera">PRIMEROS AUXILIOS</a>
+        <a href="psicologia_es.html" class="boton-cabecera">PSICOLOGÍA</a>
+        <a href="nutricion_es.html" class="boton-cabecera">NUTRICIÓN</a>
+        <a href="campañas_proximas_es.html" class="boton-cabecera">CAMPAÑAS PRÓXIMAS</a>
+        <a href="formulario_es.html" class="boton-cabecera">SOLICITAR SERVICIO</a>
+        <a href="primeros_auxilios_qh.html" class="boton-cabecera"><img src="icoci.png" class="logo-im"> SIMITA TIKRAY</a>
+    </header>
+
+   
+<section class="seccion-carrusel">
+    <h2>Videos de Primeros Auxilios</h2>
+    <div class="contenedor-carrusel">
+      
+        <button class="carrusel-btn anterior" onclick="moverSlide(-1)">&#10094;</button>
+        
+        <div class="carrusel">
+            <div class="slide">
+                <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                <p class="titulo-video">RCP Básico</p>
+            </div>
+            <div class="slide">
+                <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                <p class="titulo-video">Maniobra de Heimlich</p>
+            </div>
+            <div class="slide">
+                <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                <p class="titulo-video">Convulsiones</p>
+            </div>
+        </div>
+        
+        <button class="carrusel-btn siguiente" onclick="moverSlide(1)">&#10095;</button>
+    </div>
+    
+    <div class="puntos-navegacion">
+        <span class="punto activo" onclick="irAlSlide(0)"></span>
+        <span class="punto" onclick="irAlSlide(1)"></span>
+        <span class="punto" onclick="irAlSlide(2)"></span>
+    </div>
+</section>
+<section class="primeros_auxilios">
+    <h2>primeros auxilios</h2>
+    <div class="contenedor-tarjetas">
+        <div class="tarjeta" onclick="abrirModal('heridas-leves')">
+            <h3>Heridas Leves</h3>
+            <p>Cuidados básicos para heridas menores.</p>
+        </div>
+        <div class="tarjeta" onclick="abrirModal('heridas-graves')">
+            <h3>Heridas Graves</h3>
+            <p>Cuándo buscar ayuda médica y cómo actuar.</p>
+        </div>
+        <div class="tarjeta" onclick="abrirModal('recomendaciones')">
+            <h3>Recomendaciones</h3>
+            <p>Consejos adicionales para evitar complicaciones.</p>
+        </div>
+         <div class="tarjeta" onclick="abrirModal('intoxicacion')">
+            <h3>Intoxicaciones</h3>
+            <p>Cómo actuar en casos de intoxicación por alimentos o sustancias químicas.</p>
+        </div>
+        <div class="tarjeta" onclick="abrirModal('alergias')">
+            <h3>Reacciones Alérgicas Graves</h3>
+            <p>Identifica los síntomas de una reacción severa y cómo responder.</p>
+        </div>
+        <div class="tarjeta" onclick="abrirModal('quemaduras')">
+            <h3>Quemaduras</h3>
+            <p>Clasificación y primeros auxilios según el tipo de quemadura.</p>
+        </div>
+    </div>
+</section>
+
+<section id="modal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-texto"></p>
+    </div>
+</section>
+
+
+
+
+<script>
+    let slideActual = 0;
+    const slides = document.querySelectorAll('.slide');
+    const puntos = document.querySelectorAll('.punto');
+
+    function moverSlide(direccion) {
+        slideActual += direccion;
+        if (slideActual < 0) slideActual = slides.length - 1;
+        if (slideActual >= slides.length) slideActual = 0;
+        actualizarCarrusel();
+    }
+
+    function irAlSlide(indice) {
+        slideActual = indice;
+        actualizarCarrusel();
+    }
+
+    function actualizarCarrusel() {
+        document.querySelector('.carrusel').style.transform = `translateX(-${slideActual * 100}%)`;
+        
+        puntos.forEach((punto, i) => {
+            punto.classList.toggle('activo', i === slideActual);
+        });
+    }
+
+   // setInterval(() => moverSlide(1), 5000);
+
+function abrirModal(tipo) {
+    const modal = document.getElementById("modal");
+    const titulo = document.getElementById("modal-titulo");
+    const texto = document.getElementById("modal-texto");
+
+    if (tipo === "heridas-leves") {
+        titulo.textContent = "Tratamiento de Heridas Leves";
+        texto.innerHTML = "<strong>1. Lávate las manos:</strong> Usa agua y jabón para prevenir infecciones.<br>"
+                        + "<strong>2. Limpia la herida:</strong> Enjuaga con agua y jabón suave. Retira suciedad.<br>"
+                        + "<strong>3. Detén el sangrado:</strong> Aplica presión con gasa estéril.<br>"
+                        + "<strong>4. Aplica antibiótico:</strong> Usa ungüento antibiótico si es necesario.<br>"
+                        + "<strong>5. Cubre la herida:</strong> Usa un apósito estéril.<br>"
+                        + "<strong>6. Cambia el vendaje:</strong> Regularmente para mantener la herida limpia.";
+    } else if (tipo === "heridas-graves") {
+        titulo.textContent = "Tratamiento de Heridas Graves";
+        texto.innerHTML = "<strong>No intentes tratar la herida en casa:</strong> Busca atención médica.<br>"
+                        + "<strong>Llama al 106:</strong> Contacta emergencias.<br>"
+                        + "<strong>No muevas al herido:</strong> Especialmente si hay sospecha de fracturas.<br>"
+                        + "<strong>No retires objetos incrustados:</strong> Esto podría empeorar la lesión.<br>"
+                        + "<strong>Inmoviliza la zona:</strong> Usa tablillas y traslada al paciente.";
+    } else if (tipo === "recomendaciones") {
+        titulo.textContent = "Recomendaciones para el Cuidado de Heridas";
+        texto.innerHTML = "<strong>Vigila la herida:</strong> Observa signos de infección.<br>"
+                        + "<strong>Consulta a un profesional:</strong> Si la herida no mejora.<br>"
+                        + "<strong>Mantén la herida limpia:</strong> Y cambia el vendaje regularmente.<br>"
+                        + "<strong>Evita el sol:</strong> Puede retrasar la cicatrización.<br>"
+                        + "<strong>Vacuna antitetánica:</strong> Si la herida está contaminada.";
+    }
+    else if (tipo === "intoxicacion") {
+        titulo.textContent = "Primeros Auxilios en Caso de Intoxicación";
+        texto.innerHTML = "<strong>1. Identifica el agente:</strong> Averigua qué ha consumido la persona.<br>"
+                        + "<strong2. No induzcas el vómito:</strong> A menos que un médico lo indique.<br>"
+                        + "<strong>3. Llama al 106 o acude al centro médico:</strong> Si hay dificultad para respirar o desmayos.<br>"
+                        + "<strong>4. Mantén al afectado tranquilo:</strong> Evita movimientos bruscos.<br>"
+                        + "<strong>5. Proporciona información médica:</strong> Tipo de sustancia ingerida y síntomas.";
+    } else if (tipo === "alergias") {
+        titulo.textContent = "Cómo Actuar ante una Reacción Alérgica Grave";
+        texto.innerHTML = "<strong>1. Identifica los síntomas:</strong> Dificultad para respirar, hinchazón, erupciones.<br>"
+                        + "<strong>2. Administra epinefrina si está disponible:</strong> Uso inmediato en caso de shock anafiláctico.<br>"
+                        + "<strong>3. Llama al 106:</strong> Las reacciones alérgicas graves requieren atención urgente.<br>"
+                        + "<strong>4. Mantén al paciente acostado:</strong> Eleva sus piernas si está débil.<br>"
+                        + "<strong>5. No le des nada por vía oral:</strong> Puede empeorar la obstrucción de las vías respiratorias.";
+    } else if (tipo === "quemaduras") {
+        titulo.textContent = "Primeros Auxilios para Quemaduras";
+        texto.innerHTML = "<strong>1. Clasifica la quemadura:</strong> Primer, segundo o tercer grado.<br>"
+                        + "<strong>2. No uses hielo:</strong> Puede causar más daño en la piel.<br>"
+                        + "<strong>3. Enfría la quemadura con agua tibia:</strong> Durante 10-15 minutos.<br>"
+                        + "<strong>4. Cubre con un apósito limpio:</strong> No uses algodón, podría adherirse.<br>"
+                        + "<strong>5. Busca atención médica si es grave:</strong> Si hay ampollas o afectación profunda.";
+    }
+
+    modal.style.display = "flex";
+}
+
+function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+
+
+
+</script>
+    
+</body>
+<footer class="footer">
+    <div class="footer-contenido">
+        <div class="footer-seccion logo-footer">
+            <img src="logosinfnd.png" alt="Salud Pallpata Logo" class="logo-img-footer">
+            <p>"Cuidamos tu salud, cuidamos de ti."</p>
+        </div>
+        
+        <div class="footer-seccion">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="primeros_auxilios_es.html">Primeros Auxilios</a></li>
+                <li><a href="psicologia_es.html">Psicología</a></li>
+                <li><a href="nutricion_es.html">Nutrición</a></li>
+                <li><a href="campañas_proximas_es.html">Campañas Próximas</a></li>
+                <li><a href="formulario_es.html">Solicitar Servicio</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-seccion">
+    <h3>Contacto</h3>
+    <p><i class="fa-solid fa-location-dot"></i> Ubicación: Cusco, Perú</p>
+    <p><i class="fa-solid fa-phone"></i> Teléfono: 939536035</p>
+    <p><i class="fa-solid fa-envelope"></i> Email: centro_desalud_pallpata_@gmail.com</p>
+</div>
+        
+        <div class="footer-seccion redes-sociales">
+            <h3>Síguenos</h3>
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Allin Kawsay Digital. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</html>

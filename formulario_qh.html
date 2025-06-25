@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="qh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Pallpata | Solicitar Servicio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+            if (!validarFormulario()) {
+                return; 
+            }
+
+           
+            var nombre = document.getElementById("nombre").value;
+            
+            document.getElementById("modal-mensaje").innerText = "¡Yusulpayki " + nombre + " mañakuykimanta! Serviciuyki mañakuytam chaskirqani, huk kutimanta rimanaykikama.";
+
+           
+            document.getElementById("modal").style.display = "flex";
+
+           
+            document.querySelector(".formulario-contacto").reset();
+        }
+
+        
+        function validarFormulario() {
+            let isValid = true;
+            const form = document.querySelector('.formulario-contacto');
+
+            const errorMessages = {
+                required: "Kay ch'usaqta hunt'ay.", 
+                email: "Mana allin imayna e-mail.", 
+                phone: "Mana allin telefonopa yupaynin." 
+            };
+
+            
+            form.querySelectorAll('input[required], textarea[required], select[required]').forEach(input => {
+                const errorMessageElement = input.nextElementSibling; 
+                errorMessageElement.innerText = ''; 
+
+                if (input.value.trim() === '') {
+                    errorMessageElement.innerText = errorMessages.required;
+                    errorMessageElement.style.display = 'block';
+                    isValid = false;
+                } else if (input.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
+                    errorMessageElement.innerText = errorMessages.email;
+                    errorMessageElement.style.display = 'block';
+                    isValid = false;
+                } else if (input.type === 'tel' && !/^[0-9+() -]*$/.test(input.value)) { 
+                    errorMessageElement.innerText = errorMessages.phone;
+                    errorMessageElement.style.display = 'block';
+                    isValid = false;
+                } else {
+                    errorMessageElement.style.display = 'none'; 
+                }
+            });
+
+            
+            const tipoServicio = document.getElementById("tipo-servicio");
+            const errorMessageSelect = tipoServicio.nextElementSibling;
+            errorMessageSelect.innerText = '';
+
+            if (tipoServicio.value === '') {
+                errorMessageSelect.innerText = errorMessages.required;
+                errorMessageSelect.style.display = 'block';
+                isValid = false;
+            } else {
+                errorMessageSelect.style.display = 'none';
+            }
+
+
+            return isValid;
+        }
+
+        function cerrarModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <header class="cabecera">
+        <a href="index_qh.html" class="boton-cabecera"> 
+            <img src="logosinfnd.png" alt="Logo Salud Pallpata" class="logo-img">
+        </a>
+        <a href="primeros_auxilios_qh.html" class="boton-cabecera">ÑAWPAQ YUYAYCHAYKUNA</a>
+        <a href="psicologia_qh.html" class="boton-cabecera">PSICOLOGÍA</a>
+        <a href="nutricion_qh.html" class="boton-cabecera">MIKHUCHIY</a>
+        <a href="campañas_proximas_qh.html" class="boton-cabecera">HAMUQ CAMPAÑANAKUNA</a>
+        <a href="formulario_qh.html" class="boton-cabecera">SERVICIO MAÑAKUY</a>
+        <a href="formulario_es.html" class="boton-cabecera"><img src="icoci.png" class="logo-im"> CAMBIAR IDIOMA</a>
+    </header>
+
+    <section class="contenido">
+        <h1>Hampi Serviciuta Mañakuy</h1>
+        <form class="formulario-contacto" onsubmit="enviarFormulario(event)" novalidate>
+            <input type="text" id="nombre" placeholder="Hunt'a sutiyki" required>
+            <span class="error-message"></span>
+            <input type="tel" id="telefono" placeholder="celular yupay" required>
+            <span class="error-message"></span>
+            <input type="email" id="correo" placeholder="Email" required>
+            <span class="error-message"></span>
+            <input type="text" id="direccion" placeholder="Tiyay (wasipa dirección)" required>
+            <span class="error-message"></span>
+            <textarea id="mensaje" placeholder="¿Imaynata serviciuta necesitanki?" required></textarea>
+            <span class="error-message"></span>
+            <select id="tipo-servicio" required>
+                <option value="">Serviciuta akllay</option>
+                <option>Llapaqta hampikuna qhaway</option>
+                <option>Wasiman hampikamuq visitakuna</option>
+            </select>
+            <span class="error-message"></span>
+            <button type="submit" class="boton-enviar">Mañakuyta apachiy</button>
+        </form>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2>¡Mañakuy Apachisqa!</h2>
+            <p id="modal-mensaje"></p>
+            <button onclick="cerrarModal()">Wichq'ay</button>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <div class="footer-contenido">
+        <div class="footer-seccion logo-footer">
+            <img src="logosinfnd.png" alt="Salud Pallpata Logo" class="logo-img-footer">
+            <p>"Qampa kawsayta qawachkanchik, qamtaq qawachkanchik."</p>
+        </div>
+        
+        <div class="footer-seccion">
+            <h3>Ukipaq Enlaces</h3>
+            <ul>
+                <li><a href="index_qh.html">Qallarikuy</a></li>
+                <li><a href="primeros_auxilios_qh.html">Ñawpaq Yanapanakuy</a></li>
+                <li><a href="psicologia_qh.html">Yuyaypaq Yachay</a></li>
+                <li><a href="nutricion_qh.html">Mikhuy Ruray</a></li>
+                <li><a href="campañas_proximas_qh.html">Hamuq Kamphañas</a></li>
+                <li><a href="formulario_qh.html">Asinaypaq Tapuy</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-seccion">
+            <h3>Rimanakuy</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Chaypi Kawsay: Qusqu, Piruw</p>
+            <p><i class="fa-solid fa-phone"></i> Willañiq: 939536035</p>
+            <p><i class="fa-solid fa-envelope"></i> Qillqaypa Email: centro_desalud_pallpata_@gmail.com</p>
+        </div>
+        
+        <div class="footer-seccion redes-sociales">
+            <h3>Qatiqkuyku</h3>
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Allin Kawsay Digital. Lliw derechos nisqakuna waqaychasqa kachkan.</p>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</html>

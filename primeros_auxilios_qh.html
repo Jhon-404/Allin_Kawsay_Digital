@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="qh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Pallpata | Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecera">
+        <a href="index_qh.html" class="boton-cabecera"> 
+            <img src="logosinfnd.png" alt="Logo Salud Pallpata" class="logo-img">
+        </a>
+        <a href="primeros_auxilios_qh.html" class="boton-cabecera">ÑAWPAQ YUYAYCHAYKUNA</a>
+        <a href="psicologia_qh.html" class="boton-cabecera">PSICOLOGÍA</a>
+        <a href="nutricion_qh.html" class="boton-cabecera">MIKHUCHIY</a>
+        <a href="campañas_proximas_qh.html" class="boton-cabecera">HAMUQ CAMPAÑANAKUNA</a>
+        <a href="formulario_qh.html" class="boton-cabecera">SERVICIO MAÑAKUY</a>
+        <a href="primeros_auxilios_es.html" class="boton-cabecera"><img src="icoci.png" class="logo-im"> CAMBIAR IDIOMA</a>
+    </header>
+
+  
+<section class="seccion-carrusel">
+    <h2>Primeros Auxilios nisqamanta Videokuna</h2>
+    <div class="contenedor-carrusel">
+      
+        <button class="carrusel-btn anterior" onclick="moverSlide(-1)">&#10094;</button>
+        
+        <div class="carrusel">
+            <div class="slide">
+                <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                <p class="titulo-video">Ruway RCP</p>
+            </div>
+            <div class="slide">
+                <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                <p class="titulo-video">Chakachikuyta qispichiy </p>
+            </div>
+            <div class="slide">
+                <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                <p class="titulo-video">K'allmuypi yanapay</p>
+            </div>
+        </div>
+ 
+        <button class="carrusel-btn siguiente" onclick="moverSlide(1)">&#10095;</button>
+    </div>
+    
+  
+    <div class="puntos-navegacion">
+        <span class="punto activo" onclick="irAlSlide(0)"></span>
+        <span class="punto" onclick="irAlSlide(1)"></span>
+        <span class="punto" onclick="irAlSlide(2)"></span>
+    </div>
+</section>
+<section class="primeros_auxilios">
+    <h2>primeros auxilios</h2>
+    <div class="contenedor-tarjetas">
+        <div class="tarjeta" onclick="abrirModal('heridas-leves')">
+            <h3>Ch'iñi k'iri</h3>
+            <p>Huch’uy k’irisqakunapaq cuidado básico.</p>
+        </div>
+        <div class="tarjeta" onclick="abrirModal('heridas-graves')">
+            <h3>Sinchi k’irisqakuna</h3>
+            <p>Hayk’aq hampiqpa yanapayninta maskhana, imatataq ruwana.</p>
+        </div>
+        <div class="tarjeta" onclick="abrirModal('recomendaciones')">
+            <h3>Yuyaychaykuna</h3>
+            <p>Sasachakuykuna mana kananpaq huk yuyaychaykuna.</p>
+        </div>
+         <div class="tarjeta" onclick="abrirModal('intoxicacion')">
+            <h3>venenokuna</h3>
+            <p>Mikhuywan utaq qumikuwan envenenasqa kaptin ima ruwana.</p>
+        </div>
+        <div class="tarjeta" onclick="abrirModal('alergias')">
+            <h3>Sinchi Reacciones Alérgicas nisqa</h3>
+            <p>Riqsiy sinchi reacción nisqapa sintomakunata hinaspa imayna kutichinatapas.</p>
+        </div>
+        <div class="tarjeta" onclick="abrirModal('quemaduras')">
+            <h3>Ruphasqa</h3>
+            <p>Clasificación y primeros auxilios nisqa ima clase ruphasqa kasqanman hina.</p>
+        </div>
+    </div>
+</section>
+
+<section id="modal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-texto"></p>
+    </div>
+</section>
+
+
+
+
+<script>
+    let slideActual = 0;
+    const slides = document.querySelectorAll('.slide');
+    const puntos = document.querySelectorAll('.punto');
+
+    function moverSlide(direccion) {
+        slideActual += direccion;
+        if (slideActual < 0) slideActual = slides.length - 1;
+        if (slideActual >= slides.length) slideActual = 0;
+        actualizarCarrusel();
+    }
+
+    function irAlSlide(indice) {
+        slideActual = indice;
+        actualizarCarrusel();
+    }
+
+    function actualizarCarrusel() {
+        document.querySelector('.carrusel').style.transform = `translateX(-${slideActual * 100}%)`;
+        
+       
+        puntos.forEach((punto, i) => {
+            punto.classList.toggle('activo', i === slideActual);
+        });
+    }
+
+
+   // setInterval(() => moverSlide(1), 5000);
+
+function abrirModal(tipo) {
+    const modal = document.getElementById("modal");
+    const titulo = document.getElementById("modal-titulo");
+    const texto = document.getElementById("modal-texto");
+
+    if (tipo === "heridas-leves") {
+    titulo.textContent = "Ch'iki k'irispa allinyay";
+    texto.innerHTML = "<strong>1. Makiykita mayllay:</strong> Unuwan jabónwan infekcionmanta hark'anaykipaq.<br>"
+                    + "<strong>2. K'irita ch'uyanchanayki:</strong> Unuwan jabónwan ch'uyanchanayki. Q'umir q'umirta qichuy.<br>"
+                    + "<strong>3. Yawar q'ichuyta hark'ay:</strong> Gasapa esterilwanña q'away.<br>"
+                    + "<strong>4. Antibiotico hampi churay:</strong> Aswan necesitakuspayki antibiotico ungüento ruway.<br>"
+                    + "<strong>5. K'irita tapuy:</strong> Parche esterilta ruway.<br>"
+                    + "<strong>6. Vendaje tukuchiy:</strong> Sapa kutilla k'irita ch'uyanchay.";
+} else if (tipo === "heridas-graves") {
+    titulo.textContent = "Sasa k'irispa allinyay";
+    texto.innerHTML = "<strong>Manam wasiykipi allinyachaychu:</strong> Médico qhawariy.<br>"
+                    + "<strong>106 nisqata waqyay:</strong> Emergenciakunaman willay.<br>"
+                    + "<strong>K'iriyoqta manam kuyuchinaykichu:</strong> Sasa tullu p'akikunata sospechaspayki.<br>"
+                    + "<strong>Manam hark'asqa imakunata qichuychu:</strong> Chayqa aswan nanayta ruwanman.<br>"
+                    + "<strong>Kay ladota mana kuyuchinaykipaq:</strong> Tablillakunawan k'iriyoqta apay.";
+} else if (tipo === "recomendaciones") {
+    titulo.textContent = "K'irispa allinyaypi recomiendakuna";
+    texto.innerHTML = "<strong>K'irita qhaway:</strong> Infecciónpa señalesninta qhaway.<br>"
+                    + "<strong>Hamut'ayniyuq runaman consultay:</strong> K'iri mana allin kanqan.<br>"
+                    + "<strong>K'irita ch'uyanchanayki:</strong> Sapa kutilla vendajeta tukuchiy.<br>"
+                    + "<strong>Intiita hark'ay:</strong> Chayqa sanayta atrasanman.<br>"
+                    + "<strong>Tetanos vacunata chaskiy:</strong> K'iri q'umir q'umir kanqan.";
+} else if (tipo === "intoxicacion") {
+    titulo.textContent = "Yanq'a qhusquchkaspa ñawpaq yanapay";
+    texto.innerHTML = "<strong>1. Imamanta yanq'a qhusquchkanta riqsiy:</strong> Pipas imata upyachkasqanta taripay.<br>"
+                    + "<strong>2. Manam qhisuyachinaykichu:</strong> Médico niptinqa llalli.<br>"
+                    + "<strong>3. 106 nisqata waqyay o médico wasiman riy:</strong> Manam samayta atiqtinchu o sinchita wañuy pasaptin.<br>"
+                    + "<strong>4. K'iriyoqta samichay:</strong> Manam kuyu kuyuta ruwachinaykichu.<br>"
+                    + "<strong>5. Médicokunaman willay:</strong> Imata upyachkasqanta y síntomasninkunata.";
+} else if (tipo === "alergias") {
+    titulo.textContent = "Sasa alergiakunapi imayna ruwanayki";
+    texto.innerHTML = "<strong>1. Sintomasninkunata riqsiy:</strong> Samaypa sasanta, hinchazón, qharay qharay.<br>"
+                    + "<strong>2. Epinefrina kanqan chayqa qun:</strong> Shock anafiláctico kanqan chayqa usay.<br>"
+                    + "<strong>3. 106 nisqata waqyay:</strong> Sasa alergiakunaqa emergencia.<br>"
+                    + "<strong>4. K'iriyoqta puñuchiy:</strong> Manam sinchi kanqan chayqa chakinkunata wichay.<br>"
+                    + "<strong>5. Manam qallunpi imapas qun:</strong> Chayqa samayta aswan sasata ruwanman.";
+} else if (tipo === "quemaduras") {
+    titulo.textContent = "Rawraykuna pi ñawpaq yanapay";
+    texto.innerHTML = "<strong>1. Rawrayta clasificay:</strong> Primer, segundo o tercer grado.<br>"
+                    + "<strong>2. Manam chulluchata ruwaychu:</strong> Chayqa aswan k'irita nanachinman.<br>"
+                    + "<strong>3. Rawrayta chiri unuwan chiriichiy:</strong> 10-15 minutokunapaq.<br>"
+                    + "<strong>4. Ch'uyanchasqa parchewan tapuy:</strong> Manam algodonta ruwaychu, k'iriman pegakunman.<br>"
+                    + "<strong>5. Médico qhawariy sasa kanqan:</strong> Ampuyas kanqan o aswan ukhuman rawray kanqan.";
+}
+
+    modal.style.display = "flex";
+}
+
+function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+
+
+
+</script>
+    
+</body>
+
+<footer class="footer">
+    <div class="footer-contenido">
+        <div class="footer-seccion logo-footer">
+            <img src="logosinfnd.png" alt="Salud Pallpata Logo" class="logo-img-footer">
+            <p>"Qampa kawsayta qawachkanchik, qamtaq qawachkanchik."</p>
+        </div>
+        
+        <div class="footer-seccion">
+            <h3>Ukipaq Enlaces</h3>
+            <ul>
+                <li><a href="index_qh.html">Qallarikuy</a></li>
+                <li><a href="primeros_auxilios_qh.html">Ñawpaq Yanapanakuy</a></li>
+                <li><a href="psicologia_qh.html">Yuyaypaq Yachay</a></li>
+                <li><a href="nutricion_qh.html">Mikhuy Ruray</a></li>
+                <li><a href="campañas_proximas_qh.html">Hamuq Kamphañas</a></li>
+                <li><a href="formulario_qh.html">Asinaypaq Tapuy</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-seccion">
+            <h3>Rimanakuy</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Chaypi Kawsay: Qusqu, Piruw</p>
+            <p><i class="fa-solid fa-phone"></i> Willañiq: 939536035</p>
+            <p><i class="fa-solid fa-envelope"></i> Qillqaypa Email: centro_desalud_pallpata_@gmail.com</p>
+        </div>
+        
+        <div class="footer-seccion redes-sociales">
+            <h3>Qatiqkuyku</h3>
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Allin Kawsay Digital. Lliw derechos nisqakuna waqaychasqa kachkan.</p>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</html>
