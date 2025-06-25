@@ -904,3 +904,10 @@ button:hover {
         margin-right: 0;
     }
 }
+.video-slide,
+.slide iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    border-radius: 10px;
+}
