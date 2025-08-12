@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Pallpata | Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="cabecera">
+    <a href="#inicio" class="boton-cabecera"> 
+        <img src="logosinfnd.png" alt="Logo Salud Pallpata" class="logo-img">
+    </a>
+    <a href="#primeros-auxilios" class="boton-cabecera">PRIMEROS AUXILIOS</a>
+    <a href="#psicologia" class="boton-cabecera">PSICOLOGÍA</a>
+    <a href="#nutricion" class="boton-cabecera">NUTRICIÓN</a>
+    <a href="#campañas" class="boton-cabecera">CAMPAÑAS</a>
+    <a href="#ricon_educativo" class="boton-cabecera">RINCÓN EDUCATIVO</a>
+    <a href="#minijuegos" class="boton-cabecera">TRIVIAS</a>
+    <a href="#preguntas_frecuentes" class="boton-cabecera">PREGUNTAS FRECUENTES</a>
+
+    <div class="dropdown">
+        <button class="boton-cabecera dropbtn">INSTITUCIONAL</button>
+        <div class="dropdown-content">
+            <a href="#aliados">Únete al equipo</a>
+            <a href="#comentarios">Sugerencias</a>
+            <a href="#logros">Nuestros logros</a>
+            <a href="#cambios_proximos">Planes a futuro</a>
+        </div>
+    </div>
+    <a href="#formulario" class="boton-cabecera">SOLICITAR SERVICIO</a>
+    <a href="index_qh.html" class="boton-cabecera"><img src="icoci.png" class="logo-im"> SIMITA TIKRAY</a>
+</header>
+
+    <main>
+        <section id="inicio" class="seccion-imagen-principal">
+            <img src="logo.png" alt="Imagen Principal" class="imagen-central">
+        </section>
+
+       
+
+        <section class="seccion-menus-inferiores">
+            <div class="contenedor-menus">
+                <a href="#primeros-auxilios" class="menu-item">
+                    <h3>PRIMEROS AUXILIOS</h3>
+                </a>
+                <a href="#psicologia" class="menu-item">
+                    <h3>AYUDA PSICOLOGICA</h3>
+                </a>
+                <a href="#nutricion" class="menu-item">
+                    <h3>INFORMACIÓN NUTRICIONAL</h3>
+                </a>
+                <a href="#campañas" class="menu-item">
+                    <h3>CAMPAÑAS PRÓXIMAS</h3>
+                </a>
+                <a href="#ricon_educativo" class="menu-item">
+                    <h3>RINCÓN EDUCATIVO</h3>
+                </a>
+                <a href="#minijuegos" class="menu-item">
+                    <h3>TRIVIAS</h3>
+                </a>
+                <a href="#preguntas_frecuentes" class="menu-item">
+                    <h3>PREGUNTAS FRECUENTES</h3>
+                </a>
+                <a href="#formulario" class="menu-item">
+                    <h3>SOLICITAR SERVICIO</h3>
+                </a>
+            </div>
+        </section>
+
+        <section id="primeros-auxilios" class="seccion-carrusel">
+            <h2>Videos de Primeros Auxilios</h2>
+            <div class="contenedor-carrusel">
+                <button class="carrusel-btn anterior" onclick="moverSlide(-1)">&#10094;</button>
+                <div class="carrusel">
+                    <div class="slide">
+                        <video controls class="video-slide">
+                            <source src="video.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                        <p class="titulo-video">RCP Básico</p>
+                    </div>
+                    <div class="slide">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                        <p class="titulo-video">Maniobra de Heimlich</p>
+                    </div>
+                    <div class="slide">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                        <p class="titulo-video">Convulsiones</p>
+                    </div>
+                </div>
+                <button class="carrusel-btn siguiente" onclick="moverSlide(1)">&#10095;</button>
+            </div>
+            
+            <div class="puntos-navegacion">
+                <span class="punto activo" onclick="irAlSlide(0)"></span>
+                <span class="punto" onclick="irAlSlide(1)"></span>
+                <span class="punto" onclick="irAlSlide(2)"></span>
+            </div>
+        </section>
+        
+        <section class="primeros_auxilios">
+            <h2>Información de Primeros Auxilios</h2>
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta" onclick="abrirModal('heridas-leves')">
+                    <h3>Heridas Leves</h3>
+                    <p>Cuidados básicos para heridas menores.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('heridas-graves')">
+                    <h3>Heridas Graves</h3>
+                    <p>Cuándo buscar ayuda médica y cómo actuar.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('recomendaciones')">
+                    <h3>Recomendaciones</h3>
+                    <p>Consejos adicionales para evitar complicaciones.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('intoxicacion')">
+                    <h3>Intoxicaciones</h3>
+                    <p>Cómo actuar en casos de intoxicación por alimentos o sustancias químicas.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('alergias')">
+                    <h3>Reacciones Alérgicas Graves</h3>
+                    <p>Identifica los síntomas de una reacción severa y cómo responder.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('quemaduras')">
+                    <h3>Quemaduras</h3>
+                    <p>Clasificación y primeros auxilios según el tipo de quemadura.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="modal-auxilios" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModalAuxilios()">&times;</span>
+                <h2 id="modal-titulo"></h2>
+                <p id="modal-texto"></p>
+            </div>
+        </section>
+
+        <section id="psicologia" class="psico-contenedor">
+            <h2 class="nutricion-titulo-principal">
+                Apoyo Psicológico y Bienestar Emocional
+            </h2>
+            <div class="psico-main">
+                <div class="psico-texto">
+                    La salud mental es fundamental para nuestro bienestar. Todos, en algún momento, podemos atravesar situaciones difíciles, sentirnos tristes, ansiosos o abrumados. Hablar sobre lo que sentimos y buscar apoyo es un paso importante para sentirnos mejor.<br><br>
+                    Si necesitas orientación, acompañamiento o simplemente alguien que te escuche, recuerda que no estás solo(a). Nuestro equipo de psicología está aquí para ayudarte, brindando atención profesional, talleres y recursos para cuidar tu bienestar emocional. Pedir ayuda es un acto de fortaleza. ¡Estamos contigo!
+                </div>
+                <div class="psico-lateral" style="align-items:center;">
+                    <div class="psico-imagen" style="background:none;box-shadow:none;">
+                        <img src="psicoimagen.jpg" alt="Imagen Principal" class="imagen-central" style="max-width:100%;height:auto;">
+                    </div>
+                    <a href="#formulario" class="psico-boton" style="width:80%;margin-top:20px;text-align:center;">
+                        Solicitar Servicio de Psicología
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutricion" class="nutricion-contenedor">
+            <h1 class="nutricion-titulo-principal">Nuestra Guía de Nutrición Saludable</h1>
+            <section class="nutricion-seccion">
+                <div class="nutricion-contenido-principal">
+                    <div class="nutricion-video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_BEBES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="nutricion-texto">
+                        <h2>Alimentación en Bebés: Fundamentos para un Crecimiento Saludable</h2>
+                        <p>La nutrición durante los primeros años de vida es crucial para el desarrollo físico y cognitivo. Desde la lactancia materna exclusiva hasta la introducción de alimentos sólidos, te guiamos en cada etapa para asegurar que tu bebé reciba todos los nutrientes esenciales. Aprende sobre los alimentos adecuados, las texturas, y cómo fomentar hábitos alimenticios positivos desde temprana edad.</p>
+                        <p>Ofrecemos asesoramiento personalizado para la introducción de alimentos complementarios, manejo de alergias y desarrollo de un patrón de alimentación variado y seguro.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nutricion-seccion nutricion-seccion-invertida">
+                <div class="nutricion-contenido-principal">
+                    <div class="nutricion-video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_NINOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="nutricion-texto">
+                        <h2>Nutrición en Niños: Energía para Aprender y Jugar</h2>
+                        <p>Una alimentación equilibrada es vital para el crecimiento, el rendimiento escolar y la energía de los niños. Te ayudamos a crear dietas divertidas y nutritivas que cubran sus necesidades, abordando desafíos como la aversión a ciertos alimentos o el consumo excesivo de azúcares.</p>
+                        <p>Nuestros programas se enfocan en educar a padres e hijos sobre la importancia de las frutas, verduras, proteínas y carbohidratos complejos, promoviendo un estilo de vida activo y consciente.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nutricion-seccion">
+                <div class="nutricion-contenido-principal">
+                    <div class="nutricion-texto">
+                        <h2>Alimentación en Adolescentes: Balance en una Etapa de Cambios</h2>
+                        <p>La adolescencia es un período de rápido crecimiento y desarrollo, con necesidades nutricionales específicas. Te apoyamos en la gestión de dietas para deportistas, el control de peso saludable y la prevención de trastornos alimentarios, siempre fomentando una relación positiva con la comida y el cuerpo.</p>
+                        <p>Ofrecemos guías prácticas para la elección de alimentos saludables fuera de casa y cómo manejar la presión social relacionada con la imagen corporal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nutricion-seccion nutricion-otras-cosas">
+                <h2 class="nutricion-titulo-secundario">Otros Servicios y Consejos de Nutrición</h2>
+                <div class="nutricion-grid">
+                    <div class="nutricion-card">
+                        <h3>Nutrición para Deportistas</h3>
+                        <p>Optimiza tu rendimiento con planes nutricionales adaptados a tu actividad física.</p>
+                        <a href="#formulario" class="nutricion-boton-pequeño">Más Info</a>
+                    </div>
+                    <div class="nutricion-card">
+                        <h3>Manejo de Peso Saludable</h3>
+                        <p>Estrategias personalizadas para alcanzar y mantener un peso ideal.</p>
+                        <a href="#formulario" class="nutricion-boton-pequeño">Más Info</a>
+                    </div>
+                    <div class="nutricion-card">
+                        <h3>Dietas Especializadas</h3>
+                        <p>Asesoramiento para dietas vegetarianas, veganas, alergias e intolerancias.</p>
+                        <a href="#formulario" class="nutricion-boton-pequeño">Más Info</a>
+                    </div>
+                    <div class="nutricion-card">
+                        <h3>Talleres de Cocina Saludable</h3>
+                        <p>Aprende a preparar platos nutritivos y deliciosos en nuestros talleres.</p>
+                        <a href="#formulario" class="nutricion-boton-pequeño">Más Info</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#formulario" class="nutricion-boton-principal">Agenda tu Consulta Nutricional</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="campañas" class="contenido">
+            <h1 class="nutricion-titulo-principal">Próximas Campañas de Salud</h1>
+            <div class="campañas">
+                <div class="campaña tarjeta">
+                    <h3>Vacunación contra la Influenza</h3>
+                    <p><strong>Fecha:</strong> 15 de agosto, 2025</p>
+                    <p><strong>Lugar:</strong> Centro de Salud Pallpata</p>
+                    <p>¡No te pierdas esta campaña de vacunación gratuita contra la influenza! Protege a tu familia y comunidad.</p>
+                </div>
+                <div class="campaña tarjeta">
+                    <h3>Campaña de Donación de Sangre</h3>
+                    <p><strong>Fecha:</strong> 22 de Agosto, 2025</p>
+                    <p><strong>Lugar:</strong> Hospital Local Pallpata</p>
+                    <p>Tu donación puede salvar vidas. Únete a nuestra campaña de donación de sangre.</p>
+                </div>
+                <div class="campaña tarjeta">
+                    <h3>Examen Médico Gratuito</h3>
+                    <p><strong>Fecha:</strong> 5 de Septiembre, 2025</p>
+                    <p><strong>Lugar:</strong> Centro de Salud Pallpata</p>
+                    <p>Realiza tu examen médico sin costo y prevé enfermedades.</p>
+                </div>
+            </div>
+
+            <h2>Campañas Pasadas</h2>
+            <div class="campañas">
+                <div class="campaña tarjeta pasada">
+                    <h3>Vacunación contra el COVID-19</h3>
+                    <p><strong>Fecha:</strong> 12 de Marzo, 2025</p>
+                    <p><strong>Lugar:</strong> Centro de Salud Pallpata</p>
+                    <p>Una exitosa jornada de vacunación para prevenir el COVID-19.</p>
+                </div>
+                <div class="campaña tarjeta pasada">
+                    <h3>Campaña de Prevención de Cáncer</h3>
+                    <p><strong>Fecha:</strong> 28 de Febrero, 2025</p>
+                    <p><strong>Lugar:</strong> Hospital Local Pallpata</p>
+                    <p>Información y prevención sobre el cáncer a través de charlas y exámenes gratuitos.</p>
+                </div>
+            </div>
+        </section>
+        <section id="ricon_educativo" class="nutricion-contenedor ">
+            <h1 class="nutricion-titulo-principal">Rincon Educativo </h1>
+
+            <div class="campañas">
+                <div  class ="campaña tarjeta" >
+                    <a href="https://clinicamillet.es/wp-content/uploads/2016/02/guia-embarazo-clinica-millet.pdf" target="_blank">
+                
+                    <h3>Guia para gestantes</h3>
+                    <p>Descargue aui una guia para gestantes.</p>
+                    </a>
+            </div>
+
+             <div class="campañas">
+                <div  class ="campaña tarjeta" >
+                    <a href="https://www.inmp.gob.pe/uploads/Manual_Primeros_Auxilios.pdf" target="_blank">
+                
+                    <h3>Guia de primeros auxilios</h3>
+                    <p>Descargue aqui una guia de primeros auxilios.</p>
+                    </a>
+            </div>
+
+            <div class="campañas">
+                <div  class ="campaña tarjeta" >
+                    <a href="https://www.fraternidad.com/sites/default/files/inline-files/Gu%C3%ADa%20Prevencion%20-%20Bienestar%20Emocional%20-%20v2%20%28protegida%29.pdf" target="_blank">
+                
+                    <h3>guia de salud emocional</h3>
+                    <p>Descargue aqui una guia de primeros auxilios.</p>
+                    </a>
+                    
+            </div>
+
+        </section>
+        <section id="minijuegos" class="nutricion-contenedor">
+        <h1 class="nutricion-titulo-principal">Trivias interactivas</h1>
+        
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('primeros-auxilios-1')">
+                <span>Trivia: Primeros Auxilios (Conceptos Básicos) </span>
+                <span>▼</span>
+            </div>
+            <div id="primeros-auxilios-1" class="quiz-content">
+                <div id="q1-1" class="question-container active">
+                    <h3>Pregunta 1 de 3</h3>
+                    <p>¿Qué se debe hacer si encuentras a una persona herida en un lugar peligroso (por ejemplo, cerca de un cable eléctrico caído)?</p>
+                    <ul id="options-1-1">
+                        <li data-correct="false">
+                            <label for="q1-1-a">
+                                <input type="radio" id="q1-1-a" name="q1-1" value="a">
+                                A) Atender a la persona inmediatamente.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q1-1-b">
+                                <input type="radio" id="q1-1-b" name="q1-1" value="b">
+                                B) Asegurarse de que tanto la persona como tú están fuera de peligro.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-1-c">
+                                <input type="radio" id="q1-1-c" name="q1-1" value="c">
+                                C) Llamar a una ambulancia y esperar a que lleguen.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-1-d">
+                                <input type="radio" id="q1-1-d" name="q1-1" value="d">
+                                D) Mover a la persona a un lugar seguro sin importar los riesgos.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-1-1" class="quiz-feedback">
+                        <p>La primera parte del P.A.S. (Proteger, Avisar, Socorrer) es "Proteger". Antes de actuar, debes asegurar que no hay más peligros para ti ni para el accidentado.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('1-1', 1)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('1', 1)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q1-2" class="question-container">
+                    <h3>Pregunta 2 de 3</h3>
+                    <p>¿Qué se debe hacer si una persona está inconsciente pero respira?</p>
+                    <ul id="options-1-2">
+                        <li data-correct="false">
+                            <label for="q1-2-a">
+                                <input type="radio" id="q1-2-a" name="q1-2" value="a">
+                                A) Darle agua para que recupere la conciencia.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-2-b">
+                                <input type="radio" id="q1-2-b" name="q1-2" value="b">
+                                B) Empezar la reanimación cardiopulmonar (RCP).
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q1-2-c">
+                                <input type="radio" id="q1-2-c" name="q1-2" value="c">
+                                C) Colocarla en Posición Lateral de Seguridad (P.L.S.).
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-2-d">
+                                <input type="radio" id="q1-2-d" name="q1-2" value="d">
+                                D) Levantarla y moverla para que despierte.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-1-2" class="quiz-feedback">
+                        <p>Si la persona respira, es seguro colocarla en la "Posición Lateral de Seguridad (P.L.S.)" para prevenir que se ahogue con su propio vómito o que su lengua obstruya la vía aérea.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('1-2', 1)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('1', 2)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q1-3" class="question-container">
+                    <h3>Pregunta 3 de 3</h3>
+                    <p>¿Cuál es la finalidad principal de los primeros auxilios?</p>
+                    <ul id="options-1-3">
+                        <li data-correct="false">
+                            <label for="q1-3-a">
+                                <input type="radio" id="q1-3-a" name="q1-3" value="a">
+                                A) Reemplazar la atención médica profesional.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q1-3-b">
+                                <input type="radio" id="q1-3-b" name="q1-3" value="b">
+                                B) Salvar vidas, evitar más lesiones y proteger de infecciones.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-3-c">
+                                <input type="radio" id="q1-3-c" name="q1-3" value="c">
+                                C) Tratar todas las enfermedades de la persona.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-3-d">
+                                <input type="radio" id="q1-3-d" name="q1-3" value="d">
+                                D) Curar al herido con los medicamentos del botiquín.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-1-3" class="quiz-feedback">
+                        <p>La finalidad de los primeros auxilios es "salvar vidas", evitar que las lesiones empeoren y proteger al herido de infecciones y otras complicaciones.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('1-3', 1)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('1', 3)">Finalizar Trivia</button>
+                    </div>
+                </div>
+
+                <div id="end-message-1" class="end-message">
+                    <h2>¡Has completado esta trivia!</h2>
+                    <button class="restart-button" onclick="resetQuiz('1')">Volver a empezar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('primeros-auxilios-2')">
+                <span>Trivia: Primeros Auxilios (Lesiones Comunes) </span>
+                <span>▼</span>
+            </div>
+            <div id="primeros-auxilios-2" class="quiz-content">
+                <div id="q2-1" class="question-container active">
+                    <h3>Pregunta 1 de 3</h3>
+                    <p>¿Qué es lo primero que NO debes hacer en caso de una quemadura de segundo grado?</p>
+                    <ul id="options-2-1">
+                        <li data-correct="false">
+                            <label for="q2-1-a">
+                                <input type="radio" id="q2-1-a" name="q2-1" value="a">
+                                A) Lavar con abundante agua.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-1-b">
+                                <input type="radio" id="q2-1-b" name="q2-1" value="b">
+                                B) Cubrir con un vendaje estéril.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q2-1-c">
+                                <input type="radio" id="q2-1-c" name="q2-1" value="c">
+                                C) Aplicar pasta dental, sal o aceite en la zona.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-1-d">
+                                <input type="radio" id="q2-1-d" name="q2-1" value="d">
+                                D) Remover la ropa cerca de la piel quemada.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-2-1" class="quiz-feedback">
+                        <p>No debes aplicar pasta dental, sal, aceite o hielo en una quemadura. Estas acciones pueden empeorar la lesión y aumentar el riesgo de infección.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('2-1', 2)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('2', 1)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q2-2" class="question-container">
+                    <h3>Pregunta 2 de 3</h3>
+                    <p>¿Cuál es la primera acción para tratar una herida leve?</p>
+                    <ul id="options-2-2">
+                        <li data-correct="false">
+                            <label for="q2-2-a">
+                                <input type="radio" id="q2-2-a" name="q2-2" value="a">
+                                A) Aplicar alcohol directamente.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q2-2-b">
+                                <input type="radio" id="q2-2-b" name="q2-2" value="b">
+                                B) Limpiar la herida con agua y jabón o suero fisiológico.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-2-c">
+                                <input type="radio" id="q2-2-c" name="q2-2" value="c">
+                                C) Tapar la herida con algodón.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-2-d">
+                                <input type="radio" id="q2-2-d" name="q2-2" value="d">
+                                D) Dejar que se seque al aire sin hacer nada.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-2-2" class="quiz-feedback">
+                        <p>Para una herida leve, el primer paso es la "limpieza". Debes limpiarla con agua y jabón a chorro o con suero fisiológico, y luego usar gasas limpias y un antiséptico. No se recomienda usar alcohol ni algodón.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('2-2', 2)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('2', 2)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q2-3" class="question-container">
+                    <h3>Pregunta 3 de 3</h3>
+                    <p>Si alguien está atragantándose y no puede respirar, ¿qué maniobra se debe realizar?</p>
+                    <ul id="options-2-3">
+                        <li data-correct="false">
+                            <label for="q2-3-a">
+                                <input type="radio" id="q2-3-a" name="q2-3" value="a">
+                                A) Maniobra de hiperextensión del cuello.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q2-3-b">
+                                <input type="radio" id="q2-3-b" name="q2-3" value="b">
+                                B) Maniobra de Heimlich.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-3-c">
+                                <input type="radio" id="q2-3-c" name="q2-3" value="c">
+                                C) Masaje cardíaco externo.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-3-d">
+                                <input type="radio" id="q2-3-d" name="q2-3" value="d">
+                                D) Darle agua para que el objeto resbale.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-2-3" class="quiz-feedback">
+                        <p>Ante una obstrucción completa de la vía aérea por un atragantamiento, se debe realizar la "Maniobra de Heimlich".</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('2-3', 2)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('2', 3)">Finalizar Trivia</button>
+                    </div>
+                </div>
+
+                <div id="end-message-2" class="end-message">
+                    <h2>¡Has completado esta trivia!</h2>
+                    <button class="restart-button" onclick="resetQuiz('2')">Volver a empezar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('gestantes-1')">
+                <span>Trivia: Guía para Gestantes (Nutrición) </span>
+                <span>▼</span>
+            </div>
+            <div id="gestantes-1" class="quiz-content">
+                <div id="q3-1" class="question-container active">
+                    <h3>Pregunta 1 de 3</h3>
+                    <p>Durante el embarazo, ¿cuál de los siguientes alimentos es una buena fuente de ácido fólico (vitamina B9)?</p>
+                    <ul id="options-3-1">
+                        <li data-correct="true">
+                            <label for="q3-1-a">
+                                <input type="radio" id="q3-1-a" name="q3-1" value="a">
+                                A) Vegetales de hoja verde y legumbres.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-1-b">
+                                <input type="radio" id="q3-1-b" name="q3-1" value="b">
+                                B) Carnes rojas y pescado.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-1-c">
+                                <input type="radio" id="q3-1-c" name="q3-1" value="c">
+                                C) Azúcar y dulces.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-1-d">
+                                <input type="radio" id="q3-1-d" name="q3-1" value="d">
+                                D) Lácteos descremados.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-3-1" class="quiz-feedback">
+                        <p>El ácido fólico es esencial para la división celular y la formación de sangre. Se encuentra en los vegetales de hoja verde, las frutas, las legumbres, el hígado o los cereales integrales.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('3-1', 3)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('3', 1)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q3-2" class="question-container">
+                    <h3>Pregunta 2 de 3</h3>
+                    <p>Para aliviar las náuseas y vómitos durante el embarazo, ¿qué es lo más recomendable?</p>
+                    <ul id="options-3-2">
+                        <li data-correct="false">
+                            <label for="q3-2-a">
+                                <input type="radio" id="q3-2-a" name="q3-2" value="a">
+                                A) Comer grandes cantidades de comida una vez al día.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q3-2-b">
+                                <input type="radio" id="q3-2-b" name="q3-2" value="b">
+                                B) Comer poca cantidad y varias veces al día.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-2-c">
+                                <input type="radio" id="q3-2-c" name="q3-2" value="c">
+                                C) Ayunar durante las mañanas.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-2-d">
+                                <input type="radio" id="q3-2-d" name="q3-2" value="d">
+                                D) Beber jugos azucarados para obtener energía.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-3-2" class="quiz-feedback">
+                        <p>Comer poca cantidad y varias veces al día ayuda a que el estómago siempre esté trabajando sin saturarlo, lo que puede aliviar las náuseas y los vómitos.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('3-2', 3)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('3', 2)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q3-3" class="question-container">
+                    <h3>Pregunta 3 de 3</h3>
+                    <p>¿Qué tipo de ejercicio físico es recomendable durante la gestación?</p>
+                    <ul id="options-3-3">
+                        <li data-correct="false">
+                            <label for="q3-3-a">
+                                <input type="radio" id="q3-3-a" name="q3-3" value="a">
+                                A) Deportes violentos o de alto impacto.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-3-b">
+                                <input type="radio" id="q3-3-b" name="q3-3" value="b">
+                                B) No realizar ningún tipo de ejercicio.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q3-3-c">
+                                <input type="radio" id="q3-3-c" name="q3-3" value="c">
+                                C) Ejercicio moderado y suave.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-3-d">
+                                <input type="radio" id="q3-3-d" name="q3-3" value="d">
+                                D) Entrenamientos de levantamiento de pesas.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-3-3" class="quiz-feedback">
+                        <p>Durante la gestación, es aconsejable realizar un "ejercicio moderado y suave", y evitar los deportes violentos.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('3-3', 3)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('3', 3)">Finalizar Trivia</button>
+                    </div>
+                </div>
+
+                <div id="end-message-3" class="end-message">
+                    <h2>¡Has completado esta trivia!</h2>
+                    <button class="restart-button" onclick="resetQuiz('3')">Volver a empezar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('gestantes-2')">
+                <span>Trivia: Guía para Gestantes (Síntomas y Dolencias)</span>
+                <span>▼</span>
+            </div>
+            <div id="gestantes-2" class="quiz-content">
+                <div id="q4-1" class="question-container active">
+                    <h3>Pregunta 1 de 3</h3>
+                    <p>¿Por qué es común sentir más ganas de orinar en las primeras semanas de embarazo?</p>
+                    <ul id="options-4-1">
+                        <li data-correct="false">
+                            <label for="q4-1-a">
+                                <input type="radio" id="q4-1-a" name="q4-1" value="a">
+                                A) Por el aumento de la sed.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-1-b">
+                                <input type="radio" id="q4-1-b" name="q4-1" value="b">
+                                B) Por el aumento del tamaño del bebé.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q4-1-c">
+                                <input type="radio" id="q4-1-c" name="q4-1" value="c">
+                                C) Porque el útero en crecimiento comprime la vejiga.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-1-d">
+                                <input type="radio" id="q4-1-d" name="q4-1" value="d">
+                                D) Es un síntoma de infección urinaria.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-4-1" class="quiz-feedback">
+                        <p>En las primeras semanas de embarazo, el útero comienza a crecer, comprimiendo la vejiga que está debajo de él. Esto impide que la vejiga se llene por completo, lo que genera la sensación de orinar con más frecuencia.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('4-1', 4)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('4', 1)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q4-2" class="question-container">
+                    <h3>Pregunta 2 de 3</h3>
+                    <p>¿Qué se debe hacer si notas pérdidas de sangre vaginal continuas o abundantes durante el embarazo?</p>
+                    <ul id="options-4-2">
+                        <li data-correct="false">
+                            <label for="q4-2-a">
+                                <input type="radio" id="q4-2-a" name="q4-2" value="a">
+                                A) Esperar a que se detengan por sí solas.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-2-b">
+                                <input type="radio" id="q4-2-b" name="q4-2" value="b">
+                                B) Tomar analgésicos para el dolor.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q4-2-c">
+                                <input type="radio" id="q4-2-c" name="q4-2" value="c">
+                                C) Acudir al hospital de manera urgente.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-2-d">
+                                <input type="radio" id="q4-2-d" name="q4-2" value="d">
+                                D) Hacer más ejercicio para que el flujo se detenga.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-4-2" class="quiz-feedback">
+                        <p>Si las pérdidas son continuas o abundantes, y especialmente si se acompañan de dolor abdominal, se debe acudir al hospital de manera urgente.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('4-2', 4)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('4', 2)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q4-3" class="question-container">
+                    <h3>Pregunta 3 de 3</h3>
+                    <p>¿Cuál es una causa común de lumbago (dolor de espalda baja) durante el embarazo?</p>
+                    <ul id="options-4-3">
+                        <li data-correct="false">
+                            <label for="q4-3-a">
+                                <input type="radio" id="q4-3-a" name="q4-3" value="a">
+                                A) Carencia de vitamina C.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-3-b">
+                                <input type="radio" id="q4-3-b" name="q4-3" value="b">
+                                B) Beber poca agua.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q4-3-c">
+                                <input type="radio" id="q4-3-c" name="q4-3" value="c">
+                                C) El aumento de peso y el cambio en el centro de gravedad.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-3-d">
+                                <input type="radio" id="q4-3-d" name="q4-3" value="d">
+                                D) Falta de descanso.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-4-3" class="quiz-feedback">
+                        <p>El lumbago es muy común en más de la mitad de las embarazadas. El aumento de peso y la curvatura de la columna vertebral para compensar la inestabilidad son una causa.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('4-3', 4)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('4', 3)">Finalizar Trivia</button>
+                    </div>
+                </div>
+
+                <div id="end-message-4" class="end-message">
+                    <h2>¡Has completado esta trivia!</h2>
+                    <button class="restart-button" onclick="resetQuiz('4')">Volver a empezar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('salud-emocional-1')">
+                <span>Trivia: Salud Emocional (Conceptos) </span>
+                <span>▼</span>
+            </div>
+            <div id="salud-emocional-1" class="quiz-content">
+                <div id="q5-1" class="question-container active">
+                    <h3>Pregunta 1 de 3</h3>
+                    <p>Según la guía, ¿qué significa tener un buen equilibrio emocional?</p>
+                    <ul id="options-5-1">
+                        <li data-correct="false">
+                            <label for="q5-1-a">
+                                <input type="radio" id="q5-1-a" name="q5-1" value="a">
+                                A) Nunca sentir tristeza o enojo.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q5-1-b">
+                                <input type="radio" id="q5-1-b" name="q5-1" value="b">
+                                B) Mantener la estabilidad y afrontar los contratiempos sin dejarse dominar por ellos.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-1-c">
+                                <input type="radio" id="q5-1-c" name="q5-1" value="c">
+                                C) Aislarse de los demás para evitar el estrés.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-1-d">
+                                <input type="radio" id="q5-1-d" name="q5-1" value="d">
+                                D) Trabajar más para no pensar en los problemas.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-5-1" class="quiz-feedback">
+                        <p>Una persona con un buen equilibrio emocional mantiene su estabilidad en la vida cotidiana y tiene la capacidad de afrontar los contratiempos sin dejarse dominar por las preocupaciones.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('5-1', 5)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('5', 1)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q5-2" class="question-container">
+                    <h3>Pregunta 2 de 3</h3>
+                    <p>¿Qué es la "resiliencia"?</p>
+                    <ul id="options-5-2">
+                        <li data-correct="true">
+                            <label for="q5-2-a">
+                                <input type="radio" id="q5-2-a" name="q5-2" value="a">
+                                A) La capacidad de recuperarse de la adversidad y salir fortalecido.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-2-b">
+                                <input type="radio" id="q5-2-b" name="q5-2" value="b">
+                                B) Evitar todas las situaciones conflictivas.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-2-c">
+                                <input type="radio" id="q5-2-c" name="q5-2" value="c">
+                                C) La resistencia total y absoluta a cualquier daño.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-2-d">
+                                <input type="radio" id="q5-2-d" name="q5-2" value="d">
+                                D) Una cualidad que no se puede modificar.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-5-2" class="quiz-feedback">
+                        <p>La resiliencia es la capacidad humana de asumir con flexibilidad situaciones límite y superarlas, saliendo incluso fortalecido de ellas. No es una cualidad inalterable, sino una capacidad que se puede desarrollar.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('5-2', 5)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('5', 2)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q5-3" class="question-container">
+                    <h3>Pregunta 3 de 3</h3>
+                    <p>¿Qué actividades se recomiendan para cuidar la salud emocional?</p>
+                    <ul id="options-5-3">
+                        <li data-correct="true">
+                            <label for="q5-3-a">
+                                <input type="radio" id="q5-3-a" name="q5-3" value="a">
+                                A) Hacer ejercicio físico, pasar tiempo con amigos y buscar pasatiempos.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-3-b">
+                                <input type="radio" id="q5-3-b" name="q5-3" value="b">
+                                B) Preocuparse por los problemas del futuro.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-3-c">
+                                <input type="radio" id="q5-3-c" name="q5-3" value="c">
+                                C) Evitar hablar de los problemas para no molestar a los demás.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-3-d">
+                                <input type="radio" id="q5-3-d" name="q5-3" value="d">
+                                D) Enfocarse solo en el trabajo para distraer la mente.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-5-3" class="quiz-feedback">
+                        <p>Actividades como practicar ejercicio físico, dedicar tiempo a las personas importantes y tener pasatiempos son algunas de las estrategias sencillas que pueden ayudarte a mantener el bienestar emocional.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('5-3', 5)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('5', 3)">Finalizar Trivia</button>
+                    </div>
+                </div>
+
+                <div id="end-message-5" class="end-message">
+                    <h2>¡Has completado esta trivia!</h2>
+                    <button class="restart-button" onclick="resetQuiz('5')">Volver a empezar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('primeros-auxilios-3')">
+                <span>Trivia: Primeros Auxilios (Intoxicaciones y más) </span>
+                <span>▼</span>
+            </div>
+            <div id="primeros-auxilios-3" class="quiz-content">
+                <div id="q6-1" class="question-container active">
+                    <h3>Pregunta 1 de 3</h3>
+                    <p>En caso de intoxicación por ingestión, ¿cuál es la primera medida que se debe tomar?</p>
+                    <ul id="options-6-1">
+                        <li data-correct="true">
+                            <label for="q6-1-a">
+                                <input type="radio" id="q6-1-a" name="q6-1" value="a">
+                                A) Tratar de identificar el tóxico y la cantidad ingerida.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-1-b">
+                                <input type="radio" id="q6-1-b" name="q6-1" value="b">
+                                B) Darle de beber cualquier líquido para diluir el veneno.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-1-c">
+                                <input type="radio" id="q6-1-c" name="q6-1" value="c">
+                                C) Darle leche inmediatamente.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-1-d">
+                                <input type="radio" id="q6-1-d" name="q6-1" value="d">
+                                D) Provocar el vómito lo antes posible.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-6-1" class="quiz-feedback">
+                        <p>La primera medida es "tratar de identificar el tóxico" para poder neutralizarlo adecuadamente. Provocar el vómito solo debe hacerse en casos específicos y bajo supervisión médica.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('6-1', 6)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('6', 1)">Siguiente pregunta</button>
+                    </div>
+                </div>
+                
+                <div id="q6-2" class="question-container">
+                    <h3>Pregunta 2 de 3</h3>
+                    <p>Si una persona se desmaya (lipotimia), ¿qué es lo más adecuado hacer?</p>
+                    <ul id="options-6-2">
+                        <li data-correct="true">
+                            <label for="q6-2-a">
+                                <input type="radio" id="q6-2-a" name="q6-2" value="a">
+                                A) Tumbarla en posición horizontal y elevar sus piernas.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-2-b">
+                                <input type="radio" id="q6-2-b" name="q6-2" value="b">
+                                B) Darle un vaso de agua con azúcar.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-2-c">
+                                <input type="radio" id="q6-2-c" name="q6-2" value="c">
+                                C) Darle de comer para que recupere energías.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-2-d">
+                                <input type="radio" id="q6-2-d" name="q6-2" value="d">
+                                D) Abanicarla y echarle agua en la cara.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-6-2" class="quiz-feedback">
+                        <p>En caso de lipotimia, se debe "tumbar a la persona con las piernas elevadas unos 45°" para favorecer el flujo sanguíneo al cerebro. También es importante aflojar la ropa y asegurar que respira.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('6-2', 6)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('6', 2)">Siguiente pregunta</button>
+                    </div>
+                </div>
+
+                <div id="q6-3" class="question-container">
+                    <h3>Pregunta 3 de 3</h3>
+                    <p>Ante una fractura, ¿qué es una de las primeras cosas que se debe hacer?</p>
+                    <ul id="options-6-3">
+                        <li data-correct="false">
+                            <label for="q6-3-a">
+                                <input type="radio" id="q6-3-a" name="q6-3" value="a">
+                                A) Intentar colocar el hueso en su lugar (reducir la fractura).
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q6-3-b">
+                                <input type="radio" id="q6-3-b" name="q6-3" value="b">
+                                B) Evitar movilizar a la persona o la zona afectada.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-3-c">
+                                <input type="radio" id="q6-3-c" name="q6-3" value="c">
+                                C) Darle un analgésico de inmediato.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-3-d">
+                                <input type="radio" id="q6-3-d" name="q6-3" value="d">
+                                D) Abanicarla y echarle agua en la cara.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-6-3" class="quiz-feedback">
+                        <p>Ante una fractura, es crucial "evitar movilizar la zona" para no agravar la lesión. Nunca se debe intentar reducir la fractura o poner el hueso en su lugar.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('6-3', 6)">Mostrar resultado</button>
+                        <button class="next-button" onclick="nextQuestion('6', 3)">Finalizar Trivia</button>
+                    </div>
+                </div>
+
+                <div id="end-message-6" class="end-message">
+                    <h2>¡Has completado esta trivia!</h2>
+                    <button class="restart-button" onclick="resetQuiz('6')">Volver a empezar</button>
+                </div>
+            </div>
+        </div>
+         </section>
+
+
+
+        
+
+        <section id="preguntas_frecuentes" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Preguntas Frecuentes</h1>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Qué es el bienestar emocional?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>El bienestar emocional es un estado de ánimo donde te sientes bien, en armonía y tranquilidad, y a gusto contigo mismo y el entorno. Es ser consciente de tus propias capacidades para afrontar las tensiones de la vida de manera equilibrada.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Qué es la resiliencia?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>La resiliencia es la capacidad de una persona para afrontar con flexibilidad situaciones límite y sobreponerse a ellas, e incluso salir fortalecida.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Es normal sentir tristeza durante el embarazo?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Es muy normal tener cambios de humor, sobre todo en el primer y tercer trimestre, debido a la revolución hormonal. Sin embargo, si los cambios son exagerados o se acompañan de otros problemas, debes consultar a tu médico.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Qué puedo hacer para aliviar las náuseas del embarazo?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Para aliviar las náuseas, se recomienda comer poca cantidad y varias veces al día. De esta manera, el estómago estará trabajando continuamente sin saturarse.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Cómo se puede manejar el estrés?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Para manejar el estrés, se recomienda planificar las tareas diarias para hacerlas sin prisa. Otras estrategias incluyen caminar 15 minutos, escuchar música o hablar con un amigo.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Cómo puedo evitar el lumbago durante el embarazo?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Para combatir el lumbago, se aconseja caminar con zapatos de tacón bajo, hacer más reposo, evitar cargar peso y aplicar calor en la región lumbar. Al dormir, es recomendable hacerlo de lado con una almohada entre las rodillas.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Cuál es el propósito de los primeros auxilios?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>El propósito de los primeros auxilios es salvar vidas, prevenir más lesiones y proteger de infecciones y otras complicaciones.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Qué debo hacer si una persona se desmaya?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Si una persona se desmaya (lipotimia), debes tumbarla en posición horizontal con las piernas elevadas unos 45° y aflojar su ropa alrededor del cuello, pecho y cintura.</p>
+        </div>
+    </div>
+    
+    
+        </section>
+        <section id="aliados" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Únete al equipo</h1>
+    
+
+    <div class="aliados-card">
+        <h2>Tu apoyo es fundamental para nuestra comunidad</h2>
+        <p>En nuestra misión por mejorar la salud y el bienestar en Palpata, contamos con un equipo de profesionales y voluntarios comprometidos. Tu experiencia y dedicación pueden marcar una gran diferencia en la vida de muchas personas.</p>
+        <p>Si eres un profesional de la salud o simplemente quieres colaborar, te invitamos a ser parte de este proyecto. Juntos, podemos construir una comunidad más fuerte y saludable.</p>
+        <a href="#" class="btn-unete">¡Quiero ser voluntario!</a>
+        
+        <ul class="aliados-list">
+            <li><strong>Médicos y enfermeros:</strong> Brindando atención médica, consultas y orientación en primeros auxilios.</li>
+            <li><strong>Psicólogos y terapeutas:</strong> Ofreciendo apoyo emocional y talleres de bienestar mental.</li>
+            <li><strong>Nutricionistas:</strong> Ayudando a las familias a crear planes de alimentación saludables y accesibles.</li>
+            <li><strong>Educadores:</strong> Impartiendo charlas y talleres sobre hábitos de vida saludables en la comunidad.</li>
+            <li><strong>Voluntarios de la comunidad:</strong> Apoyando en la organización de eventos, difusión de información y logística.</li>
+        </ul>
+    </div>
+        </section>
+
+        <section id="comentarios" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Sugerencias</h1>
+    
+
+    <div class="comentarios-form-container">
+        <h2>Queremos escucharte</h2>
+        <p>En el corazón de nuestro proyecto está el deseo de mejorar continuamente para servir mejor a la comunidad de Palpata. Tus opiniones, ideas y sugerencias son la brújula que nos guía. Ya sea que tengas una idea para un nuevo servicio, un comentario sobre nuestro sitio web o una experiencia que quieras compartir, te invitamos a que nos escribas. Cada mensaje es leído con atención y nos ayuda a crecer.</p>
+        
+        <form id="sugerencia-form" class="comentarios-form">
+            <div class="form-group">
+                <label for="nombre-sugerencia">Nombre (Opcional):</label>
+                <input type="text" id="nombre-sugerencia" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="email-sugerencia">Correo electrónico (Opcional):</label>
+                <input type="email" id="email-sugerencia" name="email">
+            </div>
+            <div class="form-group">
+                <label for="sugerencia-texto">Área de comentarios/sugerencias (Obligatorio):</label>
+                <textarea id="sugerencia-texto" name="sugerencia" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+
+    <div id="modal-sugerencias" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModalSugerencias()">&times;</span>
+            <h2>¡Sugerencia Enviada!</h2>
+            <p id="modal-mensaje-sugerencias"></p>
+            <button onclick="cerrarModalSugerencias()">Cerrar</button>
+        </div>
+    </div>
+    
+   
+        </section>
+
+
+        <section id="logros" class="nutricion-contenedor">
+            <h1 class="nutricion-titulo-principal">Nuestros logros</h1>
+            <p class="logros-intro">Así avanzamos en nuestra misión por una comunidad más sana:</p>
+
+            <div class="logros-grid">
+                <div class="logro-card">
+                    <span class="icon">✔️</span>
+                    <h3>1,200+</h3>
+                    <p>Personas que accedieron a la web</p>
+                </div>
+                <div class="logro-card">
+                    <span class="icon">🧑‍👩‍👧‍👦</span>
+                    <h3>50+</h3>
+                    <p>Familias orientadas</p>
+                </div>
+                <div class="logro-card">
+                    <span class="icon">🗣️</span>
+                    <h3>10</h3>
+                    <p>Charlas informativas</p>
+                </div>
+                <div class="logro-card">
+                    <span class="icon">🗓️</span>
+                    <h3>3</h3>
+                    <p>Campañas programadas</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cambios_proximos" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Planes a futuro</h1>
+    
+    <div class="cambios-grid">
+        <div class="cambio-card">
+            <span class="icon">💜</span>
+            <h3>Idioma Aymara</h3>
+            <p>Pronto estará disponible una versión de la web en idioma Aymara para ampliar nuestro alcance en la comunidad.</p>
+        </div>
+        <div class="cambio-card">
+            <span class="icon">📢</span>
+            <h3>Lector de voz</h3>
+            <p>Añadiremos un lector de voz para facilitar el acceso a la información a personas con dificultades visuales.</p>
+        </div>
+        <div class="cambio-card">
+            <span class="icon">👨🏽‍⚕️</span>
+            <h3>Teleorientación</h3>
+            <p>Se habilitará un nuevo servicio de teleorientación médica para brindar consultas a distancia.</p>
+        </div>
+    </div>
+</section>
+
+       
+<section id="formulario" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Solicitar servicio</h1> 
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeM-u1amwZvW8jYEa2HimVfTYSp7UQZ_mhK3HhInS8zzxx3iQ/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    
+       </section>
+
+        
+        <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-seccion logo-footer">
+                <img src="logosinfnd.png" alt="Salud Pallpata Logo" class="logo-img-footer">
+                <p>"Cuidamos tu salud, cuidamos de ti."</p>
+            </div>
+            
+            <div class="footer-seccion">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#primeros-auxilios">Primeros Auxilios</a></li>
+                    <li><a href="#psicologia">Psicología</a></li>
+                    <li><a href="#nutricion">Nutrición</a></li>
+                    <li><a href="#campañas">Campañas Próximas</a></li>
+                    <li><a href="#formulario">Solicitar Servicio</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-seccion">
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Ubicación: Cusco, Perú</p>
+                <p><i class="fa-solid fa-phone"></i> Teléfono: 939536035</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: centro_desalud_pallpata_@gmail.com</p>
+            </div>
+            
+            <div class="footer-seccion redes-sociales">
+                <h3>Síguenos</h3>
+                <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Allin Kawsay Digital. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        // JS para el Carrusel de Primeros Auxilios
+        let slideActual = 0;
+        const slides = document.querySelectorAll('.slide');
+        const puntos = document.querySelectorAll('.punto');
+
+        function moverSlide(direccion) {
+            slideActual += direccion;
+            if (slideActual < 0) slideActual = slides.length - 1;
+            if (slideActual >= slides.length) slideActual = 0;
+            actualizarCarrusel();
+        }
+
+        function irAlSlide(indice) {
+            slideActual = indice;
+            actualizarCarrusel();
+        }
+
+        function actualizarCarrusel() {
+            document.querySelector('.carrusel').style.transform = `translateX(-${slideActual * 100}%)`;
+            puntos.forEach((punto, i) => {
+                punto.classList.toggle('activo', i === slideActual);
+            });
+        }
+        
+        // JS para el Modal de Primeros Auxilios
+        function abrirModal(tipo) {
+            const modal = document.getElementById("modal-auxilios");
+            const titulo = modal.querySelector("#modal-titulo");
+            const texto = modal.querySelector("#modal-texto");
+
+            if (tipo === "heridas-leves") {
+                titulo.textContent = "Tratamiento de Heridas Leves";
+                texto.innerHTML = "<strong>1. Lávate las manos:</strong> Usa agua y jabón para prevenir infecciones.<br>"
+                                + "<strong>2. Limpia la herida:</strong> Enjuaga con agua y jabón suave. Retira suciedad.<br>"
+                                + "<strong>3. Detén el sangrado:</strong> Aplica presión con gasa estéril.<br>"
+                                + "<strong>4. Aplica antibiótico:</strong> Usa ungüento antibiótico si es necesario.<br>"
+                                + "<strong>5. Cubre la herida:</strong> Usa un apósito estéril.<br>"
+                                + "<strong>6. Cambia el vendaje:</strong> Regularmente para mantener la herida limpia.";
+            } else if (tipo === "heridas-graves") {
+                titulo.textContent = "Tratamiento de Heridas Graves";
+                texto.innerHTML = "<strong>No intentes tratar la herida en casa:</strong> Busca atención médica.<br>"
+                                + "<strong>Llama al 106:</strong> Contacta emergencias.<br>"
+                                + "<strong>No muevas al herido:</strong> Especialmente si hay sospecha de fracturas.<br>"
+                                + "<strong>No retires objetos incrustados:</strong> Esto podría empeorar la lesión.<br>"
+                                + "<strong>Inmoviliza la zona:</strong> Usa tablillas y traslada al paciente.";
+            } else if (tipo === "recomendaciones") {
+                titulo.textContent = "Recomendaciones para el Cuidado de Heridas";
+                texto.innerHTML = "<strong>Vigila la herida:</strong> Observa signos de infección.<br>"
+                                + "<strong>Consulta a un profesional:</strong> Si la herida no mejora.<br>"
+                                + "<strong>Mantén la herida limpia:</strong> Y cambia el vendaje regularmente.<br>"
+                                + "<strong>Evita el sol:</strong> Puede retrasar la cicatrización.<br>"
+                                + "<strong>Vacuna antitetánica:</strong> Si la herida está contaminada.";
+            } else if (tipo === "intoxicacion") {
+                titulo.textContent = "Primeros Auxilios en Caso de Intoxicación";
+                texto.innerHTML = "<strong>1. Identifica el agente:</strong> Averigua qué ha consumido la persona.<br>"
+                                + "<strong2. No induzcas el vómito:</strong> A menos que un médico lo indique.<br>"
+                                + "<strong>3. Llama al 106 o acude al centro médico:</strong> Si hay dificultad para respirar o desmayos.<br>"
+                                + "<strong>4. Mantén al afectado tranquilo:</strong> Evita movimientos bruscos.<br>"
+                                + "<strong>5. Proporciona información médica:</strong> Tipo de sustancia ingerida y síntomas.";
+            } else if (tipo === "alergias") {
+                titulo.textContent = "Cómo Actuar ante una Reacción Alérgica Grave";
+                texto.innerHTML = "<strong>1. Identifica los síntomas:</strong> Dificultad para respirar, hinchazón, erupciones.<br>"
+                                + "<strong>2. Administra epinefrina si está disponible:</strong> Uso inmediato en caso de shock anafiláctico.<br>"
+                                + "<strong>3. Llama al 106:</strong> Las reacciones alérgicas graves requieren atención urgente.<br>"
+                                + "<strong>4. Mantén al paciente acostado:</strong> Eleva sus piernas si está débil.<br>"
+                                + "<strong>5. No le des nada por vía oral:</strong> Puede empeorar la obstrucción de las vías respiratorias.";
+            } else if (tipo === "quemaduras") {
+                titulo.textContent = "Primeros Auxilios para Quemaduras";
+                texto.innerHTML = "<strong>1. Clasifica la quemadura:</strong> Primer, segundo o tercer grado.<br>"
+                                + "<strong>2. No uses hielo:</strong> Puede causar más daño en la piel.<br>"
+                                + "<strong>3. Enfría la quemadura con agua tibia:</strong> Durante 10-15 minutos.<br>"
+                                + "<strong>4. Cubre con un apósito limpio:</strong> No uses algodón, podría adherirse.<br>"
+                                + "<strong>5. Busca atención médica si es grave:</strong> Si hay ampollas o afectación profunda.";
+            }
+            modal.style.display = "flex";
+        }
+        function cerrarModalAuxilios() {
+            document.getElementById("modal-auxilios").style.display = "none";
+        }
+        
+        // JS para el Formulario de Solicitud
+        document.querySelector('.formulario-contacto').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var nombre = document.getElementById("nombre").value;
+            document.getElementById("modal-mensaje").innerText = "¡Gracias por tu solicitud, " + nombre + "! Hemos recibido tu solicitud de servicio y nos pondremos en contacto contigo pronto.";
+            document.getElementById("modal-formulario").style.display = "flex";
+            this.reset();
+        });
+
+        function cerrarModalFormulario() {
+            document.getElementById("modal-formulario").style.display = "none";
+        }
+
+    </script>
+    <script>
+        let quizzes = {
+            '1': { currentQuestion: 1, totalQuestions: 3 },
+            '2': { currentQuestion: 1, totalQuestions: 3 },
+            '3': { currentQuestion: 1, totalQuestions: 3 },
+            '4': { currentQuestion: 1, totalQuestions: 3 },
+            '5': { currentQuestion: 1, totalQuestions: 3 },
+            '6': { currentQuestion: 1, totalQuestions: 3 }
+        };
+
+        function toggleQuiz(quizId) {
+            const quizContent = document.getElementById(quizId);
+            const arrow = quizContent.previousElementSibling.querySelector('span:last-child');
+            
+            quizContent.classList.toggle('active');
+            arrow.textContent = quizContent.classList.contains('active') ? '▲' : '▼';
+        }
+
+        function checkAnswer(questionId, quizNumber) {
+            const optionsList = document.getElementById(`options-${questionId}`);
+            const feedbackDiv = document.getElementById(`feedback-${questionId}`);
+            const actionsDiv = optionsList.parentElement.querySelector('.actions');
+            const showResultButton = actionsDiv.querySelector('.show-result');
+            const nextButton = actionsDiv.querySelector('.next-button');
+            const selectedInput = optionsList.querySelector('input[name="q' + questionId + '"]:checked');
+
+            if (selectedInput) {
+                optionsList.querySelectorAll('li').forEach(item => {
+                    const input = item.querySelector('input');
+                    const label = item.querySelector('label');
+                    
+                    if (item.dataset.correct === 'true') {
+                        item.classList.add('correct');
+                        label.innerHTML += '<span class="result-icon">✔</span>';
+                    } else if (input.checked) {
+                        item.classList.add('incorrect');
+                        label.innerHTML += '<span class="result-icon">✖</span>';
+                    }
+                    input.disabled = true;
+                    label.style.pointerEvents = 'none';
+                });
+                feedbackDiv.classList.add('active');
+                showResultButton.style.display = 'none';
+                nextButton.style.display = 'block';
+
+                if (quizzes[quizNumber].currentQuestion === quizzes[quizNumber].totalQuestions) {
+                    nextButton.textContent = 'Finalizar Trivia';
+                }
+            }
+        }
+
+        function nextQuestion(quizNumber, questionNumber) {
+            document.getElementById(`q${quizNumber}-${questionNumber}`).classList.remove('active');
+            quizzes[quizNumber].currentQuestion++;
+            
+            if (quizzes[quizNumber].currentQuestion <= quizzes[quizNumber].totalQuestions) {
+                document.getElementById(`q${quizNumber}-${quizzes[quizNumber].currentQuestion}`).classList.add('active');
+            } else {
+                document.getElementById(`end-message-${quizNumber}`).style.display = 'block';
+            }
+        }
+
+        function resetQuiz(quizNumber) {
+            const quizContent = document.getElementById(`primeros-auxilios-${quizNumber}`);
+            quizContent.querySelectorAll('.question-container').forEach(q => q.classList.remove('active'));
+            quizContent.querySelectorAll('li').forEach(item => {
+                item.classList.remove('correct', 'incorrect');
+                const input = item.querySelector('input');
+                input.checked = false;
+                input.disabled = false;
+                const label = item.querySelector('label');
+                label.style.pointerEvents = 'auto';
+                const resultIcon = label.querySelector('.result-icon');
+                if (resultIcon) {
+                    resultIcon.remove();
+                }
+            });
+            quizContent.querySelectorAll('.quiz-feedback').forEach(feedback => {
+                feedback.classList.remove('active');
+            });
+            quizContent.querySelectorAll('.show-result').forEach(button => {
+                button.style.display = 'inline-block';
+            });
+            quizContent.querySelectorAll('.next-button').forEach(button => {
+                button.style.display = 'none';
+            });
+            quizContent.querySelector('.end-message').style.display = 'none';
+            quizzes[quizNumber].currentQuestion = 1;
+            document.getElementById(`q${quizNumber}-1`).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar mostrando la primera pregunta de cada quiz al cargar
+            for (const quiz in quizzes) {
+                document.getElementById(`q${quiz}-1`).classList.add('active');
+            }
+        });
+
+    </script>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const arrow = element.querySelector('span:last-child');
+            
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            element.classList.toggle('active');
+        }
+    </script>
+    <script>
+        document.getElementById('sugerencia-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var nombre = document.getElementById("nombre-sugerencia").value;
+            var mensajeModal = "¡Gracias! Hemos recibido tu sugerencia. Tu opinión es muy valiosa para nosotros.";
+
+            if (nombre) {
+                mensajeModal = "¡Gracias por tu sugerencia, " + nombre + "! Hemos recibido tu mensaje. Tu opinión es muy valiosa para nosotros.";
+            }
+
+            document.getElementById("modal-mensaje-sugerencias").innerText = mensajeModal;
+            document.getElementById("modal-sugerencias").style.display = "flex";
+            
+            this.reset();
+
+            // Esto evita la notificación de reenvío del formulario
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+            }
+        });
+
+        function cerrarModalSugerencias() {
+            document.getElementById("modal-sugerencias").style.display = "none";
+        }
+    </script>
+</body>
+</html>
