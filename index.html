@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" href="logosinfnd.png" type="image/png">
+
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salud Pallpata | Inicio</title>
@@ -8,18 +11,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    
     <header class="cabecera">
     <a href="#inicio" class="boton-cabecera"> 
         <img src="logosinfnd.png" alt="Logo Salud Pallpata" class="logo-img">
     </a>
     <a href="#primeros-auxilios" class="boton-cabecera">PRIMEROS AUXILIOS</a>
-    <a href="#psicologia" class="boton-cabecera">PSICOLOGÍA</a>
-    <a href="#nutricion" class="boton-cabecera">NUTRICIÓN</a>
-    <a href="#campañas" class="boton-cabecera">CAMPAÑAS</a>
-    <a href="#ricon_educativo" class="boton-cabecera">RINCÓN EDUCATIVO</a>
+    <div class="dropdown">
+        <button class="boton-cabecera dropbtn">INFÓRMATE</button>
+        <div class="dropdown-content">
+            <a href="#psicologia">PSICOLOGÍA</a>
+            <a href="#nutricion">NUTRICIÓN</a>
+            <a href="#saludsexual">SALUD SEXUAL</a>
+            <a href="#campañas">CAMPAÑAS</a>
+            <a href="#ricon_educativo">RINCÓN EDUCATIVO</a>
+        </div>
+    </div>
+    
+    
+    
     <a href="#minijuegos" class="boton-cabecera">TRIVIAS</a>
     <a href="#preguntas_frecuentes" class="boton-cabecera">PREGUNTAS FRECUENTES</a>
-
+    
     <div class="dropdown">
         <button class="boton-cabecera dropbtn">INSTITUCIONAL</button>
         <div class="dropdown-content">
@@ -33,11 +46,13 @@
     <a href="index_qh.html" class="boton-cabecera"><img src="icoci.png" class="logo-im"> SIMITA TIKRAY</a>
 </header>
 
+
+
     <main>
         <section id="inicio" class="seccion-imagen-principal">
             <img src="logo.png" alt="Imagen Principal" class="imagen-central">
         </section>
-
+        
        
 
         <section class="seccion-menus-inferiores">
@@ -46,7 +61,7 @@
                     <h3>PRIMEROS AUXILIOS</h3>
                 </a>
                 <a href="#psicologia" class="menu-item">
-                    <h3>AYUDA PSICOLOGICA</h3>
+                    <h3>AYUDA PSICOLÓGICA</h3>
                 </a>
                 <a href="#nutricion" class="menu-item">
                     <h3>INFORMACIÓN NUTRICIONAL</h3>
@@ -70,24 +85,29 @@
         </section>
 
         <section id="primeros-auxilios" class="seccion-carrusel">
-            <h2>Videos de Primeros Auxilios</h2>
+            <h2>Videos Informativos</h2>
             <div class="contenedor-carrusel">
                 <button class="carrusel-btn anterior" onclick="moverSlide(-1)">&#10094;</button>
                 <div class="carrusel">
                     <div class="slide">
                         <video controls class="video-slide">
-                            <source src="video.mp4" type="video/mp4">
-                            Tu navegador no soporta la reproducción de video.
+                            <source src="anemia 2.mp4" type="video/mp4">
+                    
                         </video>
-                        <p class="titulo-video">RCP Básico</p>
+                        <p class="titulo-video">La Anemia</p>
                     </div>
                     <div class="slide">
-                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-                        <p class="titulo-video">Maniobra de Heimlich</p>
+                        <video controls class="video-slide">
+                            <source src="complicaciones duante el ambaraso.mp4" type="video/mp4">
+                        </video>
+                        <p class="titulo-video">Riesgos en el embarazo</p>
                     </div>
                     <div class="slide">
-                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-                        <p class="titulo-video">Convulsiones</p>
+                            <video controls class="video-slide">
+                            <source src="educación sexual.mp4" type="video/mp4">
+                        </video>
+
+                        <p class="titulo-video">Mitos de las relaciones sexuales</p>
                     </div>
                 </div>
                 <button class="carrusel-btn siguiente" onclick="moverSlide(1)">&#10095;</button>
@@ -101,7 +121,7 @@
         </section>
         
         <section class="primeros_auxilios">
-            <h2>Información de Primeros Auxilios</h2>
+            <h2 class="texto_centrado">Información de Primeros Auxilios</h2>
             <div class="contenedor-tarjetas">
                 <div class="tarjeta" onclick="abrirModal('heridas-leves')">
                     <h3>Heridas Leves</h3>
@@ -138,7 +158,7 @@
             </div>
         </section>
 
-        <section id="psicologia" class="psico-contenedor">
+        <section id="psicologia" class="nutricion-contenedor">
             <h2 class="nutricion-titulo-principal">
                 Apoyo Psicológico y Bienestar Emocional
             </h2>
@@ -149,13 +169,52 @@
                 </div>
                 <div class="psico-lateral" style="align-items:center;">
                     <div class="psico-imagen" style="background:none;box-shadow:none;">
+
                         <img src="psicoimagen.jpg" alt="Imagen Principal" class="imagen-central" style="max-width:100%;height:auto;">
                     </div>
                     <a href="#formulario" class="psico-boton" style="width:80%;margin-top:20px;text-align:center;">
                         Solicitar Servicio de Psicología
                     </a>
                 </div>
+                <div >
+                        <div class="nutricion-texto">
+    <h2>Estrés, Ansiedad y Depresión</h2>
+    <p>Sentirse estresado, ansioso o con falta de energía emocional es más común de lo que parece. Estas emociones pueden ser una respuesta natural a situaciones difíciles, pero si se prolongan en el tiempo o afectan tu vida diaria, es importante atenderlas.</p>
+    <p>El <strong>estrés</strong> se manifiesta cuando las exigencias del entorno superan tu capacidad para afrontarlas. La <strong>ansiedad</strong> genera preocupación constante, miedo o tensión, incluso sin una causa clara. La <strong>depresión</strong> puede llevar a una profunda tristeza, pérdida de interés y cansancio emocional. Todos estos estados son tratables con el acompañamiento adecuado.</p>
+    <p>No estás solo(a). Hablar con un profesional puede ayudarte a comprender lo que sientes, manejarlo mejor y recuperar tu bienestar emocional.</p>
+</div>
+<div class="nutricion-texto">
+  <div style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-VXJ6q-dzXA" 
+    frameborder="0" allowfullscreen style="max-width: 100%;"></iframe>
+    
+  </div>
+</div>
+
+                </div>
+               
+
             </div>
+        </section>
+        <section id="saludsexual" class="nutricion-contenedor">
+            <h1 class="nutricion-titulo-principal">Salud Sexual</h1>
+
+            <div class="nutricion-texto">
+    
+    <p>La salud sexual es una parte esencial del bienestar general. No se trata solo de prevenir enfermedades, sino también de entender y vivir la sexualidad de forma segura, libre, informada y respetuosa.</p>
+    <p>Hablar de sexualidad incluye temas como el consentimiento, el respeto por las decisiones propias y ajenas, el uso de métodos anticonceptivos y la prevención de infecciones de transmisión sexual (ITS). También abarca el conocimiento del propio cuerpo y la expresión sana de emociones y afectos.</p>
+    <p>Además, es fundamental reconocer y valorar la diversidad en las identidades de género y orientaciones sexuales. Promovemos una educación sexual inclusiva y sin prejuicios, que contribuya al desarrollo de relaciones sanas y responsables.</p>
+</div>
+
+
+<div style="text-align: center;">
+    <video controls class="video-slide">
+                            <source src="educación sexual.mp4" type="video/mp4">
+                        </video>
+    
+  </div>
+
+
         </section>
 
         <section id="nutricion" class="nutricion-contenedor">
@@ -163,11 +222,13 @@
             <section class="nutricion-seccion">
                 <div class="nutricion-contenido-principal">
                     <div class="nutricion-video-container">
-                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_BEBES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <video controls class="video-slide">
+                            <source src="ALIMENTACION PARA LA ANEMIA.mp4" type="video/mp4">
+                        </video>    
                     </div>
                     <div class="nutricion-texto">
                         <h2>Alimentación en Bebés: Fundamentos para un Crecimiento Saludable</h2>
-                        <p>La nutrición durante los primeros años de vida es crucial para el desarrollo físico y cognitivo. Desde la lactancia materna exclusiva hasta la introducción de alimentos sólidos, te guiamos en cada etapa para asegurar que tu bebé reciba todos los nutrientes esenciales. Aprende sobre los alimentos adecuados, las texturas, y cómo fomentar hábitos alimenticios positivos desde temprana edad.</p>
+                        <p>La nutrición durante los primeros años de vida es crucial para el desarrollo físico y cognitivo. Desde la lactancia materna exclusiva hasta la introducción de alimentos sólidos, te guiamos en cada etapa para asegurar que tu bebé reciba todos los nutrientes esenciales. Aprende sobre los alimentos adecuados, las texturas y cómo fomentar hábitos alimenticios positivos desde temprana edad.</p>
                         <p>Ofrecemos asesoramiento personalizado para la introducción de alimentos complementarios, manejo de alergias y desarrollo de un patrón de alimentación variado y seguro.</p>
                     </div>
                 </div>
@@ -176,8 +237,9 @@
             <section class="nutricion-seccion nutricion-seccion-invertida">
                 <div class="nutricion-contenido-principal">
                     <div class="nutricion-video-container">
-                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_NINOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                        <video controls class="video-slide">
+                            <source src="comida para la anemia.mp4" type="video/mp4">
+                        </video></div>
                     <div class="nutricion-texto">
                         <h2>Nutrición en Niños: Energía para Aprender y Jugar</h2>
                         <p>Una alimentación equilibrada es vital para el crecimiento, el rendimiento escolar y la energía de los niños. Te ayudamos a crear dietas divertidas y nutritivas que cubran sus necesidades, abordando desafíos como la aversión a ciertos alimentos o el consumo excesivo de azúcares.</p>
@@ -231,19 +293,19 @@
             <div class="campañas">
                 <div class="campaña tarjeta">
                     <h3>Vacunación contra la Influenza</h3>
-                    <p><strong>Fecha:</strong> 15 de agosto, 2025</p>
+                    <p><strong>Fecha:</strong> 20 de agosto, 2025</p>
                     <p><strong>Lugar:</strong> Centro de Salud Pallpata</p>
                     <p>¡No te pierdas esta campaña de vacunación gratuita contra la influenza! Protege a tu familia y comunidad.</p>
                 </div>
                 <div class="campaña tarjeta">
                     <h3>Campaña de Donación de Sangre</h3>
-                    <p><strong>Fecha:</strong> 22 de Agosto, 2025</p>
+                    <p><strong>Fecha:</strong> 22 de agosto, 2025</p>
                     <p><strong>Lugar:</strong> Hospital Local Pallpata</p>
                     <p>Tu donación puede salvar vidas. Únete a nuestra campaña de donación de sangre.</p>
                 </div>
                 <div class="campaña tarjeta">
                     <h3>Examen Médico Gratuito</h3>
-                    <p><strong>Fecha:</strong> 5 de Septiembre, 2025</p>
+                    <p><strong>Fecha:</strong> 5 de septiembre, 2025</p>
                     <p><strong>Lugar:</strong> Centro de Salud Pallpata</p>
                     <p>Realiza tu examen médico sin costo y prevé enfermedades.</p>
                 </div>
@@ -253,59 +315,48 @@
             <div class="campañas">
                 <div class="campaña tarjeta pasada">
                     <h3>Vacunación contra el COVID-19</h3>
-                    <p><strong>Fecha:</strong> 12 de Marzo, 2025</p>
+                    <p><strong>Fecha:</strong> 12 de marzo, 2025</p>
                     <p><strong>Lugar:</strong> Centro de Salud Pallpata</p>
                     <p>Una exitosa jornada de vacunación para prevenir el COVID-19.</p>
                 </div>
                 <div class="campaña tarjeta pasada">
                     <h3>Campaña de Prevención de Cáncer</h3>
-                    <p><strong>Fecha:</strong> 28 de Febrero, 2025</p>
+                    <p><strong>Fecha:</strong> 28 de febrero, 2025</p>
                     <p><strong>Lugar:</strong> Hospital Local Pallpata</p>
                     <p>Información y prevención sobre el cáncer a través de charlas y exámenes gratuitos.</p>
                 </div>
             </div>
         </section>
-        <section id="ricon_educativo" class="nutricion-contenedor ">
-            <h1 class="nutricion-titulo-principal">Rincon Educativo </h1>
-
+        <section id="ricon_educativo" class="contenido">
+            <h1 class="nutricion-titulo-principal">Rincón Educativo</h1>
             <div class="campañas">
-                <div  class ="campaña tarjeta" >
+                <div  class ="campaña tarjeta">
                     <a href="https://clinicamillet.es/wp-content/uploads/2016/02/guia-embarazo-clinica-millet.pdf" target="_blank">
-                
-                    <h3>Guia para gestantes</h3>
-                    <p>Descargue aui una guia para gestantes.</p>
+                        <h3>Guía para gestantes</h3>
+                        <p>Descargue aquí una guía para gestantes.</p>
                     </a>
-            </div>
-            <div class="campañas">
-                <div  class ="campaña tarjeta" >
+                </div>
+                <div class="campaña tarjeta">
                     <a href="https://salutsexual.sidastudi.org/resources/inmagic-img/DD93948.pdf" target="_blank">
-                
-                    <h3>Guia sobre la educacion sexual </h3>
-                    <p>Descargue aquí una guia sobre educacion sexual .</p>
+                        <h3>Guía sobre la educación sexual</h3>
+                        <p>Descargue aquí una guía sobre educación sexual.</p>
                     </a>
-            </div>
-
-             <div class="campañas">
-                <div  class ="campaña tarjeta" >
+                </div>
+                 <div class="campaña tarjeta">
                     <a href="https://www.inmp.gob.pe/uploads/Manual_Primeros_Auxilios.pdf" target="_blank">
-                
-                    <h3>Guia de primeros auxilios</h3>
-                    <p>Descargue aquí una guia de primeros auxilios.</p>
+                        <h3>Guía de primeros auxilios</h3>
+                        <p>Descargue aquí una guía de primeros auxilios.</p>
                     </a>
-            </div>
-
-            <div class="campañas">
-                <div  class ="campaña tarjeta" >
+                </div>
+                <div class="campaña tarjeta">
                     <a href="https://www.fraternidad.com/sites/default/files/inline-files/Gu%C3%ADa%20Prevencion%20-%20Bienestar%20Emocional%20-%20v2%20%28protegida%29.pdf" target="_blank">
-                
-                    <h3>guia de salud emocional</h3>
-                    <p>Descargue aquí una guia de primeros auxilios.</p>
+                        <h3>Guía de salud emocional</h3>
+                        <p>Descargue aquí una guía de salud emocional.</p>
                     </a>
-                    
+                </div>
             </div>
-            
-
         </section>
+        
         <section id="minijuegos" class="nutricion-contenedor">
         <h1 class="nutricion-titulo-principal">Trivias interactivas</h1>
         
@@ -675,7 +726,7 @@
                         </li>
                     </ul>
                     <div id="feedback-3-3" class="quiz-feedback">
-                        <p>Durante la gestación, es aconsejable realizar un "ejercicio moderado y suave", y evitar los deportes violentos.</p>
+                        <p>Durante la gestación, es aconsejable realizar un "ejercicio moderado y suave" y evitar los deportes violentos.</p>
                     </div>
                     <div class="actions">
                         <button class="show-result" onclick="checkAnswer('3-3', 3)">Mostrar resultado</button>
@@ -1167,7 +1218,7 @@
 
     <div class="aliados-card">
         <h2>Tu apoyo es fundamental para nuestra comunidad</h2>
-        <p>En nuestra misión por mejorar la salud y el bienestar en Palpata, contamos con un equipo de profesionales y voluntarios comprometidos. Tu experiencia y dedicación pueden marcar una gran diferencia en la vida de muchas personas.</p>
+        <p>En nuestra misión por mejorar la salud y el bienestar en Pallpata, contamos con un equipo de profesionales y voluntarios comprometidos. Tu experiencia y dedicación pueden marcar una gran diferencia en la vida de muchas personas.</p>
         <p>Si eres un profesional de la salud o simplemente quieres colaborar, te invitamos a ser parte de este proyecto. Juntos, podemos construir una comunidad más fuerte y saludable.</p>
         <a href="#" class="btn-unete">¡Quiero ser voluntario!</a>
         
@@ -1187,7 +1238,7 @@
 
     <div class="comentarios-form-container">
         <h2>Queremos escucharte</h2>
-        <p>En el corazón de nuestro proyecto está el deseo de mejorar continuamente para servir mejor a la comunidad de Palpata. Tus opiniones, ideas y sugerencias son la brújula que nos guía. Ya sea que tengas una idea para un nuevo servicio, un comentario sobre nuestro sitio web o una experiencia que quieras compartir, te invitamos a que nos escribas. Cada mensaje es leído con atención y nos ayuda a crecer.</p>
+        <p>En el corazón de nuestro proyecto está el deseo de mejorar continuamente para servir mejor a la comunidad de Pallpata. Tus opiniones, ideas y sugerencias son la brújula que nos guía. Ya sea que tengas una idea para un nuevo servicio, un comentario sobre nuestro sitio web o una experiencia que quieras compartir, te invitamos a que nos escribas. Cada mensaje es leído con atención y nos ayuda a crecer.</p>
         
         <form id="sugerencia-form" class="comentarios-form">
             <div class="form-group">
@@ -1254,7 +1305,7 @@
         <div class="cambio-card">
             <span class="icon">💜</span>
             <h3>Idioma Aymara</h3>
-            <p>Pronto estará disponible una versión de la web en idioma Aymara para ampliar nuestro alcance en la comunidad.</p>
+            <p>Pronto estará disponible una versión de la web en idioma aymara para ampliar nuestro alcance en la comunidad.</p>
         </div>
         <div class="cambio-card">
             <span class="icon">📢</span>
@@ -1269,12 +1320,72 @@
     </div>
 </section>
 
-       
+
 <section id="formulario" class="nutricion-contenedor">
     <h1 class="nutricion-titulo-principal">Solicitar servicio</h1> 
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeM-u1amwZvW8jYEa2HimVfTYSp7UQZ_mhK3HhInS8zzxx3iQ/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
     
        </section>
+
+<section>
+    <audio id="background-music" loop>
+        <source src="mufo.mpeg" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    
+    
+    <button id="play-pause-button" class="audio-player-button">
+        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="audio-player-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" class="audio-player-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+    </button>
+
+    <script>
+        const audio = document.getElementById('background-music');
+        const playPauseButton = document.getElementById('play-pause-button');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+
+        playPauseButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+            } else {
+                audio.pause();
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+            }
+        });
+    </script>
+
+
+
+
+
+    </section>
+
+        <section id="boton_whatsapp">
+
+          
+<a href="https://wa.me/+51939536035?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20con%20el%20Centro%20Médico%20Allin%20Kawsay%20Digital%20de%20Pallpata" 
+   class="whatsapp-chat" 
+   target="_blank" 
+   title="Escríbenos por WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+
+
+            
+        </section>
+
+
 
         
         <footer class="footer">
@@ -1318,7 +1429,7 @@
 
     
     <script>
-        // JS para el Carrusel de Primeros Auxilios
+        
         let slideActual = 0;
         const slides = document.querySelectorAll('.slide');
         const puntos = document.querySelectorAll('.punto');
@@ -1373,7 +1484,7 @@
             } else if (tipo === "intoxicacion") {
                 titulo.textContent = "Primeros Auxilios en Caso de Intoxicación";
                 texto.innerHTML = "<strong>1. Identifica el agente:</strong> Averigua qué ha consumido la persona.<br>"
-                                + "<strong2. No induzcas el vómito:</strong> A menos que un médico lo indique.<br>"
+                                + "<strong>2. No induzcas el vómito:</strong> A menos que un médico lo indique.<br>"
                                 + "<strong>3. Llama al 106 o acude al centro médico:</strong> Si hay dificultad para respirar o desmayos.<br>"
                                 + "<strong>4. Mantén al afectado tranquilo:</strong> Evita movimientos bruscos.<br>"
                                 + "<strong>5. Proporciona información médica:</strong> Tipo de sustancia ingerida y síntomas.";
