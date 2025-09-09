@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="qh">
+<head>
+    <link rel="icon" href="logosinfnd.png" type="image/png">
+
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallpata Allin Kawsay | Qallariy</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+    <a href="#inicio" class="boton-cabecera"> 
+        <img src="logosinfnd.png" alt="Logo Salud Pallpata" class="logo-img">
+    </a>
+    <a href="#primeros-auxilios" class="boton-cabecera">ÑAWPAQ YANAPAKUYKUNA</a>
+    <div class="dropdown">
+        <button class="boton-cabecera dropbtn">YACHAYKACHIY</button>
+        <div class="dropdown-content">
+            <a href="#psicologia">YUYAY YACHAY</a>
+            <a href="#nutricion">ALLIN MIKHUY</a>
+            <a href="#saludsexual">YAWRAY ALLIN KAWSAY</a>
+            <a href="#campañas">LLANK'AYKUNA</a>
+            <a href="#ricon_educativo">YACHAY K'UCHU</a>
+        </div>
+    </div>
+    
+    
+    
+    <a href="#minijuegos" class="boton-cabecera">YACHAY TARIPAYKUNA</a>
+    <a href="#preguntas_frecuentes" class="boton-cabecera">ASKHA TAPUKUYKUNA</a>
+    
+    <div class="dropdown">
+        <button class="boton-cabecera dropbtn">SULLULLCHASQA</button>
+        <div class="dropdown-content">
+            <a href="#aliados">HUÑUNAKUYKUSUN</a>
+            <a href="#comentarios">RIMARIYKUNA</a>
+            <a href="#logros">RUWASQAYKUKUNA</a>
+            <a href="#cambios_proximos">HAMUQ PACHAPA RUWAYKUNA</a>
+        </div>
+    </div>
+    <a href="#formulario" class="boton-cabecera">YANAPAKUYTA MAÑAKUY</a>
+    <a href="index.html" class="boton-cabecera"><img src="icoci.png" class="logo-im"> CAMBIAR IDIOMA</a>
+</header>
+
+
+
+    <main>
+        <section id="inicio" class="seccion-imagen-principal">
+            <img src="logo.png" alt="Imagen Principal" class="imagen-central">
+        </section>
+        
+       
+
+        <section class="seccion-menus-inferiores">
+            <div class="contenedor-menus">
+                <a href="#primeros-auxilios" class="menu-item">
+                    <h3>ÑAWPAQ YANAPAKUYKUNA</h3>
+                </a>
+                <a href="#psicologia" class="menu-item">
+                    <h3>YUYAYPI YANAPAKUY</h3>
+                </a>
+                <a href="#nutricion" class="menu-item">
+                    <h3>ALLIN MIKHUYMANTA YACHAY</h3>
+                </a>
+                <a href="#campañas" class="menu-item">
+                    <h3>HAMUQ LLANK'AYKUNA</h3>
+                </a>
+                <a href="#ricon_educativo" class="menu-item">
+                    <h3>YACHAY K'UCHU</h3>
+                </a>
+                <a href="#minijuegos" class="menu-item">
+                    <h3>YACHAY TARIPAYKUNA</h3>
+                </a>
+                <a href="#preguntas_frecuentes" class="menu-item">
+                    <h3>ASKHA TAPUKUYKUNA</h3>
+                </a>
+                <a href="#formulario" class="menu-item">
+                    <h3>YANAPAKUYTA MAÑAKUY</h3>
+                </a>
+            </div>
+        </section>
+
+        <section id="primeros-auxilios" class="seccion-carrusel">
+            <h2>Yachachiy Rikuqkuna</h2>
+            <div class="contenedor-carrusel">
+                <button class="carrusel-btn anterior" onclick="moverSlide(-1)">&#10094;</button>
+                <div class="carrusel">
+                    <div class="slide">
+                        <video controls class="video-slide">
+                            <source src="anemia 2.mp4" type="video/mp4">
+                    
+                        </video>
+                        <p class="titulo-video">Anemia</p>
+                    </div>
+                    <div class="slide">
+                        <video controls class="video-slide">
+                            <source src="complicaciones duante el ambaraso.mp4" type="video/mp4">
+                        </video>
+                        <p class="titulo-video">Wiksallikuypi llakikuna</p>
+                    </div>
+                    <div class="slide">
+                            <video controls class="video-slide">
+                            <source src="educación sexual.mp4" type="video/mp4">
+                        </video>
+
+                        <p class="titulo-video">Yawraymanta llulla yuyaykuna</p>
+                    </div>
+                </div>
+                <button class="carrusel-btn siguiente" onclick="moverSlide(1)">&#10095;</button>
+            </div>
+            
+            <div class="puntos-navegacion">
+                <span class="punto activo" onclick="irAlSlide(0)"></span>
+                <span class="punto" onclick="irAlSlide(1)"></span>
+                <span class="punto" onclick="irAlSlide(2)"></span>
+            </div>
+        </section>
+        
+        <section class="primeros_auxilios">
+            <h2 class="texto_centrado">Ñawpaq Yanapakuykunamanta Yachay</h2>
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta" onclick="abrirModal('heridas-leves')">
+                    <h3>Huch'uy Kirikuna</h3>
+                    <p>Huch'uy kirikunapaq qhawaykuna.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('heridas-graves')">
+                    <h3>Hatun Kirikuna</h3>
+                    <p>Hayk'aq hampiqta maskhana chaymanta imayna ruwana.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('recomendaciones')">
+                    <h3>Rimariykuna</h3>
+                    <p>Aman sasachakuykuna kananpaq yanapaykuna.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('intoxicacion')">
+                    <h3>Miyuykuna</h3>
+                    <p>Mikhuykunawan utaq imaymanakunawan miyusqa kaqtin imayna ruwana.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('alergias')">
+                    <h3>Hatun Alergia Unquykuna</h3>
+                    <p>Hatun unquypa unanchankunata riqsiy chaymanta imayna kutichiy.</p>
+                </div>
+                <div class="tarjeta" onclick="abrirModal('quemaduras')">
+                    <h3>Ruphaykuna</h3>
+                    <p>Ruphaykunamanhina ñawpaq yanapakuykuna.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="modal-auxilios" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModalAuxilios()">&times;</span>
+                <h2 id="modal-titulo"></h2>
+                <p id="modal-texto"></p>
+            </div>
+        </section>
+
+        <section id="psicologia" class="nutricion-contenedor">
+            <h2 class="nutricion-titulo-principal">
+                Yuyaypi Yanapakuy chaymanta Allin Kawsay
+            </h2>
+            <div class="psico-main">
+                <div class="psico-texto">
+                    Yuyay allin kawsayqa ancha chaninmi allin kawsayninchikpaq. Llapanchikmi mayk'aqllapas sasa pachakunata pasasunman, llakisqa, mancharisqa utaq sayk'usqa tarikunchikman. Imayna kasqanchikmanta rimayqa, yanapakuyta maskhaypas, aswan allin kanapaqmi. <br><br>
+                    Yachachisqa kayta, pusarisqa kayta utaq uyarisqa kayta munaspankiqa, yuyariy, manam sapallaykichu kachkanki. Yuyay yachay huñuykuykuqa yanapanasuykipaqmi kachkaniku, yachaysapa yanapakuyta, yachaykunata chaymanta allin kawsayniykipaq imaymanakunata quspa. Yanapakuyta mañakuyqa kallpasapa kaymi. ¡Qanwanmi kachkaniku!
+                </div>
+                <div class="psico-lateral" style="align-items:center;">
+                    <div class="psico-imagen" style="background:none;box-shadow:none;">
+
+                        <img src="psicoimagen.jpg" alt="Imagen Principal" class="imagen-central" style="max-width:100%;height:auto;">
+                    </div>
+                    <a href="#formulario" class="psico-boton" style="width:80%;margin-top:20px;text-align:center;">
+                        Yuyay Yachay Yanapakuyta Mañakuy
+                    </a>
+                </div>
+                <div >
+                        <div class="nutricion-texto">
+    <h2>Llakikuy, Manchapakuy chaymanta Sunqu Nanay</h2>
+    <p>Llakisqa, mancharisqa utaq sunqu nanaywan kayqa aswan yachasqam. Kaykunaqa sasa pachakunaman kutichiy hinam kanman, ichaqa unayta qhipakuptin utaq kawsayniykita sasachaptinqa, qhawarinañam.</p>
+    <p><strong>Llakikuyqa</strong> rikhurin mayk'aqchus muyuriyniykipi mañakuykuna atipayniykita llalliptin. <strong>Manchapakuyqa</strong> sapa kuti llakikuyta, manchayta utaq tensión nisqata paqarichin, mana sut'i imarayku kaptinpas. <strong>Sunqu nanayqa</strong> hatun llakiman, mana imatapas munanaman chaymanta sunqu sayk'uyman apanman. Llapan kaykunaqa allin pusaywan hampikuqmi.</p>
+    <p>Manam sapallaykichu kachkanki. Yachaysapawan rimayqa yanapasunkimanmi imayna kasqaykita hamut'anaykipaq, aswan allinta apanaykipaq chaymanta sunqu allin kawsayniykita kutichipunaykipaq.</p>
+</div>
+<div class="nutricion-texto">
+  <div style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-VXJ6q-dzXA" 
+    frameborder="0" allowfullscreen style="max-width: 100%;"></iframe>
+    
+  </div>
+</div>
+
+                </div>
+               
+
+            </div>
+        </section>
+        <section id="saludsexual" class="nutricion-contenedor">
+            <h1 class="nutricion-titulo-principal">Yawray Allin Kawsay</h1>
+
+            <div class="nutricion-texto">
+    
+    <p>Yawray allin kawsayqa llapan allin kawsayninchikpa hukninmi. Manam unquykunamanta hark'akuyllachu, aswanpas yawrayta allinta, qhasilla, yachasqa chaymanta respetowan kawsaymi.</p>
+    <p>Yawraymanta rimayqa kaykunatam hap'in: ari ninakuy, sapankama ruwayninkunata respetay, mana unqunanpaq hampikunata servichikuy chaymanta yawray unquykunamanta hark'akuy. Hinallataqmi kikin kurkuta riqsiy chaymanta sunqu munaykunata allinta rikuchiy.</p>
+    <p>Chaymantapas, ancha chaninmi imaymana género kaykunata chaymanta yawray munaykunata riqsiy chaymanta chaninchay. Llapanpaq, mana k'amiywan yawray yachachiyta kallpanchaniku, allin chaymanta chanin yawraykunata paqarichinanpaq.</p>
+</div>
+
+
+<div style="text-align: center;">
+    <video controls class="video-slide">
+                            <source src="educación sexual.mp4" type="video/mp4">
+                        </video>
+    
+  </div>
+
+
+        </section>
+
+        <section id="nutricion" class="nutricion-contenedor">
+            <h1 class="nutricion-titulo-principal">Allin Mikhuy Yachachikuyniyku</h1>
+            <section class="nutricion-seccion">
+                <div class="nutricion-contenido-principal">
+                    <div class="nutricion-video-container">
+                        <video controls class="video-slide">
+                            <source src="ALIMENTACION PARA LA ANEMIA.mp4" type="video/mp4">
+                        </video>    
+                    </div>
+                    <div class="nutricion-texto">
+                        <h2>Wawakunapa Mikhunan: Allin Wiñaypaq Qallariykuna</h2>
+                        <p>Ñawpaq watakunapi mikhuyqa ancha chaninmi kurku chaymanta yuyay wiñaypaq. Ñuñu ch'uwasqamanta qallarispa mikhuykunata qallarinankama, sapanka pachapi pusaykiku wawayki llapan chanin mikhuykunata chaskinanpaq. Allin mikhuykunamanta, imayna kananmanta chaymanta huch'uymantapacha allin mikhuy yachaykunata kallpanchanamanta yachaqay.</p>
+                        <p>Yanapaykiku mikhuykunata qallarinankupaq, alergia unquykunata apanankupaq chaymanta imaymana allin mikhuykunata mikhunankupaq.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nutricion-seccion nutricion-seccion-invertida">
+                <div class="nutricion-contenido-principal">
+                    <div class="nutricion-video-container">
+                        <video controls class="video-slide">
+                            <source src="comida para la anemia.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="nutricion-texto">
+                        <h2>Wawakunapa Mikhunan: Yachaqanapaq chaymanta Pukllanapaq Kallpa</h2>
+                        <p>Allin mikhuyqa ancha chaninmi wiñanapaq, yachay wasipi allin kananpaq chaymanta wawakunapa kallpanpaq. Yanapaykiku kusisqa chaymanta allin mikhuykunata wakichinaykipaq, wakin mikhuykunata mana munasqankuta utaq nisyu misk'ita mikhusqankuta allichaspa.</p>
+                        <p>Yachachikuyniykuqa tayta mamakunata chaymanta wawakunata yachachinmi rurukunapa, yuyukunapa, aychakunapa chaymanta carbohidratos complejos nisqakunapa chanin kasqanmanta, kuyurispa chaymanta yachaspa kawsayta kallpanchaspa.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nutricion-seccion">
+                <div class="nutricion-contenido-principal">
+                    <div class="nutricion-texto">
+                        <h2>Wayna Sipaskunapa Mikhunan: Tikray Pacha Allin Kawsay</h2>
+                        <p>Wayna sipas kayqa utqaylla wiñay pacha, sapaq mikhuykunata munaspa. Yanapaykiku pukllaqkunapaq mikhuykunata wakichinaykipi, allin llasayta apanaykipi chaymanta mikhuy unquykunamanta hark'akunaykipi, sapa kuti mikhuywan chaymanta kurkuwan allin apanakuyta kallpanchaspa.</p>
+                        <p>Yachachiykunata quykiku hawa wasipi allin mikhuykunata akllanapaq chaymanta kurku rikch'aymanta rimaqkunata imayna apanapaq.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nutricion-seccion nutricion-otras-cosas">
+                <h2 class="nutricion-titulo-secundario">Huk Yanapakuykuna chaymanta Allin Mikhuy Rimariykuna</h2>
+                <div class="nutricion-grid">
+                    <div class="nutricion-card">
+                        <h3>Pukllaqkunapaq Allin Mikhuy</h3>
+                        <p>Kuyuriyniykimanhina mikhuykunawan kallpaykita yapay.</p>
+                        <a href="#formulario" class="nutricion-boton-pequeño">Aswan Yachay</a>
+                    </div>
+                    <div class="nutricion-card">
+                        <h3>Allin Llasay Apay</h3>
+                        <p>Allin llasayniykipi kanaykipaq sapaq yachachiykuna.</p>
+                        <a href="#formulario" class="nutricion-boton-pequeño">Aswan Yachay</a>
+                    </div>
+                    <div class="nutricion-card">
+                        <h3>Sapaq Mikhuykuna</h3>
+                        <p>Yuyu mikhuykunapaq, alergia unquykunapaq yanapakuy.</p>
+                        <a href="#formulario" class="nutricion-boton-pequeño">Aswan Yachay</a>
+                    </div>
+                    <div class="nutricion-card">
+                        <h3>Allin Mikhuy Wayk'uy Yachay</h3>
+                        <p>Allin chaymanta misk'i mikhuykunata wakichiyta yachaqay.</p>
+                        <a href="#formulario" class="nutricion-boton-pequeño">Aswan Yachay</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#formulario" class="nutricion-boton-principal">Allin Mikhuy Tapukuyta Qillqachikuy</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="campañas" class="contenido">
+            <h1 class="nutricion-titulo-principal">HamUQ Allin Kawsay Llank'aykuna</h1>
+            <div class="campañas">
+                <div class="campaña tarjeta">
+                    <h3>Influenza Unquypaq Hampi</h3>
+                    <p><strong>P'unchaw:</strong> 20 punchaw, agosto killa, 2025 watapi</p>
+                    <p><strong>Maypi:</strong> Pallpata Allin Kawsay Wasipi</p>
+                    <p>¡Ama qhipakuychu kay qhasilla influenza unquypaq hampi llank'aypi! Aylluykita chaymanta llaqtaykita hark'akuy.</p>
+                </div>
+                <div class="campaña tarjeta">
+                    <h3>Yawar Qoy Llank'ay</h3>
+                    <p><strong>P'unchaw:</strong> 22 punchaw, agosto killa, 2025 watapi</p>
+                    <p><strong>Maypi:</strong> Pallpata Hampina Wasipi</p>
+                    <p>Qoyniykiqa kawsaykunatam qispichinman. Yawar qoy llank'ayniykuman huñunakuy.</p>
+                </div>
+                <div class="campaña tarjeta">
+                    <h3>Qhasilla Hampiq Qhaway</h3>
+                    <p><strong>P'unchaw:</strong> 5 punchaw, septiembre killa, 2025 watapi</p>
+                    <p><strong>Maypi:</strong> Pallpata Allin Kawsay Wasipi</p>
+                    <p>Qhasilla hampiqwan qhawachikuy chaymanta unquykunamanta hark'akuy.</p>
+                </div>
+            </div>
+
+            <h2>Ñawpaq Llank'aykuna</h2>
+            <div class="campañas">
+                <div class="campaña tarjeta pasada">
+                    <h3>COVID-19 Unquypaq Hampi</h3>
+                    <p><strong>P'unchaw:</strong> 12 punchaw, marzo killa, 2025 watapi</p>
+                    <p><strong>Maypi:</strong> Pallpata Allin Kawsay Wasipi</p>
+                    <p>COVID-19 unquymanta hark'akunapaq allin hampi llank'ay.</p>
+                </div>
+                <div class="campaña tarjeta pasada">
+                    <h3>Cáncer Unquymanta Hark'akuy Llank'ay</h3>
+                    <p><strong>P'unchaw:</strong> 28 punchaw, febrero killa, 2025 watapi</p>
+                    <p><strong>Maypi:</strong> Pallpata Hampina Wasipi</p>
+                    <p>Cáncer unquymanta yachachiy chaymanta hark'akuy rimaykunawan chaymanta qhasilla qhawaykunawan.</p>
+                </div>
+            </div>
+        </section>
+        <section id="ricon_educativo" class="contenido">
+            <h1 class="nutricion-titulo-principal">Yachay K'uchu</h1>
+            <div class="campañas">
+                <div  class ="campaña tarjeta">
+                    <a href="https://clinicamillet.es/wp-content/uploads/2016/02/guia-embarazo-clinica-millet.pdf" target="_blank">
+                        <h3>Wiksallikuqkunapaq Yachachikuy</h3>
+                        <p>Kaypi wiksallikuqkunapaq yachachikuyta uraykachiy.</p>
+                    </a>
+                </div>
+                <div class="campaña tarjeta">
+                    <a href="https://salutsexual.sidastudi.org/resources/inmagic-img/DD93948.pdf" target="_blank">
+                        <h3>Yawray Yachaymanta Yachachikuy</h3>
+                        <p>Kaypi yawray yachaymanta yachachikuyta uraykachiy.</p>
+                    </a>
+                </div>
+                 <div class="campaña tarjeta">
+                    <a href="https://www.inmp.gob.pe/uploads/Manual_Primeros_Auxilios.pdf" target="_blank">
+                        <h3>Ñawpaq Yanapakuykunamanta Yachachikuy</h3>
+                        <p>Kaypi ñawpaq yanapakuykunamanta yachachikuyta uraykachiy.</p>
+                    </a>
+                </div>
+                <div class="campaña tarjeta">
+                    <a href="https://www.fraternidad.com/sites/default/files/inline-files/Gu%C3%ADa%20Prevencion%20-%20Bienestar%20Emocional%20-%20v2%20%28protegida%29.pdf" target="_blank">
+                        <h3>Sunqu Allin Kawsaymanta Yachachikuy</h3>
+                        <p>Kaypi sunqu allin kawsaymanta yachachikuyta uraykachiy.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="minijuegos" class="nutricion-contenedor">
+        <h1 class="nutricion-titulo-principal">Pukllay Yachay Taripaykuna</h1>
+        
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('primeros-auxilios-1')">
+                <span>Yachay Taripay: Ñawpaq Yanapakuykuna (Qallariy Yachaykuna) </span>
+                <span>▼</span>
+            </div>
+            <div id="primeros-auxilios-1" class="quiz-content">
+                <div id="q1-1" class="question-container active">
+                    <h3>Tapukuy 1/3</h3>
+                    <p>¿Imatam ruwana sichus kirisqa runata tarinki huk manchaypi (kayhina, q'uñi cable urmasqa qayllapi)?</p>
+                    <ul id="options-1-1">
+                        <li data-correct="false">
+                            <label for="q1-1-a">
+                                <input type="radio" id="q1-1-a" name="q1-1" value="a">
+                                A) Utqaylla runata yanapay.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q1-1-b">
+                                <input type="radio" id="q1-1-b" name="q1-1" value="b">
+                                B) Runapas qampas mana manchaypi kasqaykichikta qhaway.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-1-c">
+                                <input type="radio" id="q1-1-c" name="q1-1" value="c">
+                                C) Ambulanciata waqyay chaymanta chayamunankuta suyay.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-1-d">
+                                <input type="radio" id="q1-1-d" name="q1-1" value="d">
+                                D) Runata huk allinman apay mana imatapas qhawaspa.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-1-1" class="quiz-feedback">
+                        <p>P.A.S. (Hark'ay, Willay, Yanapay) nisqapa ñawpaq kaqninqa "Hark'ay". Manaraq imatapas ruwaspa, qampaqpas kirisqapaqpas mana manchaykuna kasqanta qhawana.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('1-1', 1)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('1', 1)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q1-2" class="question-container">
+                    <h3>Tapukuy 2/3</h3>
+                    <p>¿Imatam ruwana sichus huk runa mana yuyayninpi kachkan ichaqa samachkan?</p>
+                    <ul id="options-1-2">
+                        <li data-correct="false">
+                            <label for="q1-2-a">
+                                <input type="radio" id="q1-2-a" name="q1-2" value="a">
+                                A) Unuta quy yuyayninman kutirinanpaq.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-2-b">
+                                <input type="radio" id="q1-2-b" name="q1-2" value="b">
+                                B) Sunqu-surq'an kawsarichiyta (RCP) qallariy.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q1-2-c">
+                                <input type="radio" id="q1-2-c" name="q1-2" value="c">
+                                C) Waqtanmanta Allin Sirichiy (P.L.S.) nisqapi churay.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-2-d">
+                                <input type="radio" id="q1-2-d" name="q1-2" value="d">
+                                D) Hatariyachiy chaymanta kuyuchiy rikch'arinanpaq.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-1-2" class="quiz-feedback">
+                        <p>Sichus runa samachkan, allinmi "Waqtanmanta Allin Sirichiy (P.L.S.)" nisqapi churay, ama kikin aqtuwan jiq'ipananpaq utaq qallun samay ñanninta wichq'ananpaq.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('1-2', 1)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('1', 2)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q1-3" class="question-container">
+                    <h3>Tapukuy 3/3</h3>
+                    <p>¿Imapaqmi ñawpaq yanapakuykuna?</p>
+                    <ul id="options-1-3">
+                        <li data-correct="false">
+                            <label for="q1-3-a">
+                                <input type="radio" id="q1-3-a" name="q1-3" value="a">
+                                A) Yachaysapa hampiqpa rantinpi kay.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q1-3-b">
+                                <input type="radio" id="q1-3-b" name="q1-3" value="b">
+                                B) Kawsaykunata qispichiy, aswan kirikunamanta hark'akuy chaymanta unquykunamanta amachay.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-3-c">
+                                <input type="radio" id="q1-3-c" name="q1-3" value="c">
+                                C) Runapa llapan unquyninkunata hampiy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q1-3-d">
+                                <input type="radio" id="q1-3-d" name="q1-3" value="d">
+                                D) Kirisqata hampikunawan hampiy.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-1-3" class="quiz-feedback">
+                        <p>Ñawpaq yanapakuykunapa chaninqa "kawsaykunata qispichiy", kirikuna ama aswan hatun kananpaq chaymanta kirisqata unquykunamanta chaymanta huk sasachakuykunamanta amachay.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('1-3', 1)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('1', 3)">Yachay Taripayta Tukuchiy</button>
+                    </div>
+                </div>
+
+                <div id="end-message-1" class="end-message">
+                    <h2>¡Kay yachay taripayta tukuchirqunki!</h2>
+                    <button class="restart-button" onclick="resetQuiz('1')">Hukmanta qallariy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('primeros-auxilios-2')">
+                <span>Yachay Taripay: Ñawpaq Yanapakuykuna (Yachasqa Kirikuna) </span>
+                <span>▼</span>
+            </div>
+            <div id="primeros-auxilios-2" class="quiz-content">
+                <div id="q2-1" class="question-container active">
+                    <h3>Tapukuy 1/3</h3>
+                    <p>¿Imatam MANA ruwanachu iskay ñiqi gradopi ruphasqa kaqtin?</p>
+                    <ul id="options-2-1">
+                        <li data-correct="false">
+                            <label for="q2-1-a">
+                                <input type="radio" id="q2-1-a" name="q2-1" value="a">
+                                A) Askha unuwan maylliy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-1-b">
+                                <input type="radio" id="q2-1-b" name="q2-1" value="b">
+                                B) Ch'uya p'istunawan p'istuy.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q2-1-c">
+                                <input type="radio" id="q2-1-c" name="q2-1" value="c">
+                                C) Kiru hampita, kachita utaq aceiteta churay.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-1-d">
+                                <input type="radio" id="q2-1-d" name="q2-1" value="d">
+                                D) Ruphasqa qarapa qayllanpi p'achata hurquy.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-2-1" class="quiz-feedback">
+                        <p>Manam kiru hampita, kachita, aceiteta utaq ch'uñuta ruphasqapi churanachu. Kaykunaqa kirita aswan sasachanman chaymanta unquyta yapaykunman.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('2-1', 2)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('2', 1)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q2-2" class="question-container">
+                    <h3>Tapukuy 2/3</h3>
+                    <p>¿Ima ñawpaq ruwanam huch'uy kirita hampinapaq?</p>
+                    <ul id="options-2-2">
+                        <li data-correct="false">
+                            <label for="q2-2-a">
+                                <input type="radio" id="q2-2-a" name="q2-2" value="a">
+                                A) Alcoholta chiqanmanta churay.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q2-2-b">
+                                <input type="radio" id="q2-2-b" name="q2-2" value="b">
+                                B) Kirita unuwan, jabonwan utaq suero fisiológicowan maylliy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-2-c">
+                                <input type="radio" id="q2-2-c" name="q2-2" value="c">
+                                C) Kirita utkhuwan p'istuy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-2-d">
+                                <input type="radio" id="q2-2-d" name="q2-2" value="d">
+                                D) Ch'akinanta suyay mana imatapas ruwaspa.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-2-2" class="quiz-feedback">
+                        <p>Huch'uy kiripaqqa, ñawpaq kaqqa "ch'uyanchay". Unuwan, jabonwan utaq suero fisiológicowan mayllina, chaymanta ch'uya gasakunawan chaymanta huk antisépticowan. Manam alcoholtapas utkhutapas churanachu.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('2-2', 2)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('2', 2)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q2-3" class="question-container">
+                    <h3>Tapukuy 3/3</h3>
+                    <p>Sichus pipas jiq'ipakuchkan chaymanta mana samayta atinchu, ¿ima ruwanatam ruwana?</p>
+                    <ul id="options-2-3">
+                        <li data-correct="false">
+                            <label for="q2-3-a">
+                                <input type="radio" id="q2-3-a" name="q2-3" value="a">
+                                A) Kunka mast'ariy ruwana.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q2-3-b">
+                                <input type="radio" id="q2-3-b" name="q2-3" value="b">
+                                B) Heimlich ruwana.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-3-c">
+                                <input type="radio" id="q2-3-c" name="q2-3" value="c">
+                                C) Hawa sunqu masaje.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q2-3-d">
+                                <input type="radio" id="q2-3-d" name="q2-3" value="d">
+                                D) Unuta quy imapas llusk'ananpaq.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-2-3" class="quiz-feedback">
+                        <p>Jiq'ipakuymanta samay ñan hunt'asqa wichq'akuptinqa, "Heimlich ruwana" ruwana.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('2-3', 2)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('2', 3)">Yachay Taripayta Tukuchiy</button>
+                    </div>
+                </div>
+
+                <div id="end-message-2" class="end-message">
+                    <h2>¡Kay yachay taripayta tukuchirqunki!</h2>
+                    <button class="restart-button" onclick="resetQuiz('2')">Hukmanta qallariy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('gestantes-1')">
+                <span>Yachay Taripay: Wiksallikuqkunapaq Yachachikuy (Allin Mikhuy) </span>
+                <span>▼</span>
+            </div>
+            <div id="gestantes-1" class="quiz-content">
+                <div id="q3-1" class="question-container active">
+                    <h3>Tapukuy 1/3</h3>
+                    <p>Wiksallikuy pachapi, ¿mayqin mikhuykunataq ácido fólico (vitamina B9) nisqayuq?</p>
+                    <ul id="options-3-1">
+                        <li data-correct="true">
+                            <label for="q3-1-a">
+                                <input type="radio" id="q3-1-a" name="q3-1" value="a">
+                                A) Q'umir laqhi yuyukuna chaymanta imaymana rurukuna.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-1-b">
+                                <input type="radio" id="q3-1-b" name="q3-1" value="b">
+                                B) Puka aychakuna chaymanta challwa.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-1-c">
+                                <input type="radio" id="q3-1-c" name="q3-1" value="c">
+                                C) Misk'i chaymanta imaymana misk'ikuna.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-1-d">
+                                <input type="radio" id="q3-1-d" name="q3-1" value="d">
+                                D) Mana wira ñuñumanta ruwasqakuna.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-3-1" class="quiz-feedback">
+                        <p>Ácido fólicoqa ancha chaninmi celulakuna rakikunanpaq chaymanta yawar paqarinanpaq. Q'umir laqhi yuyukunapi, rurukunapi, imaymana rurukunapi, k'iwichapi utaq hunt'asqa cereal nisqakunapi tarikun.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('3-1', 3)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('3', 1)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q3-2" class="question-container">
+                    <h3>Tapukuy 2/3</h3>
+                    <p>Wiksallikuy pachapi millayta chaymanta aqtuqta allichanapaq, ¿imatam ruwana?</p>
+                    <ul id="options-3-2">
+                        <li data-correct="false">
+                            <label for="q3-2-a">
+                                <input type="radio" id="q3-2-a" name="q3-2" value="a">
+                                A) Askha mikhuyta huk kutillapi mikhuy.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q3-2-b">
+                                <input type="radio" id="q3-2-b" name="q3-2" value="b">
+                                B) Pichqa kutita p'unchawpi, pisillata mikhuy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-2-c">
+                                <input type="radio" id="q3-2-c" name="q3-2" value="c">
+                                C) Paqarinpi mana mikhuy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-2-d">
+                                <input type="radio" id="q3-2-d" name="q3-2" value="d">
+                                D) Misk'i unukunata upyay kallpa chaskinapaq.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-3-2" class="quiz-feedback">
+                        <p>Pichqa kutita p'unchawpi, pisillata mikhuyqa yanapanmi wiksa sapa kuti llank'ananpaq mana nisyuta hunt'aspa, chaymi millayta chaymanta aqtuqta allichanman.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('3-2', 3)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('3', 2)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q3-3" class="question-container">
+                    <h3>Tapukuy 3/3</h3>
+                    <p>¿Ima kuyuriytam wiksallikuy pachapi ruwana?</p>
+                    <ul id="options-3-3">
+                        <li data-correct="false">
+                            <label for="q3-3-a">
+                                <input type="radio" id="q3-3-a" name="q3-3" value="a">
+                                A) Maqanakuy utaq hatun impacto nisqa pukllaykuna.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-3-b">
+                                <input type="radio" id="q3-3-b" name="q3-3" value="b">
+                                B) Mana ima kuyuriytapas ruway.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q3-3-c">
+                                <input type="radio" id="q3-3-c" name="q3-3" value="c">
+                                C) Pisimanta chaymanta llamp'u kuyuriy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q3-3-d">
+                                <input type="radio" id="q3-3-d" name="q3-3" value="d">
+                                D) Llasa hoqariy kuyuriykuna.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-3-3" class="quiz-feedback">
+                        <p>Wiksallikuy pachapiqa, allinmi "pisimanta chaymanta llamp'u kuyuriy" ruway chaymanta maqanakuy pukllaykunamanta karunchakuy.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('3-3', 3)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('3', 3)">Yachay Taripayta Tukuchiy</button>
+                    </div>
+                </div>
+
+                <div id="end-message-3" class="end-message">
+                    <h2>¡Kay yachay taripayta tukuchirqunki!</h2>
+                    <button class="restart-button" onclick="resetQuiz('3')">Hukmanta qallariy</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('gestantes-2')">
+                <span>Yachay Taripay: Wiksallikuqkunapaq Yachachikuy (Unanchakuna chaymanta Nanaykuna)</span>
+                <span>▼</span>
+            </div>
+            <div id="gestantes-2" class="quiz-content">
+                <div id="q4-1" class="question-container active">
+                    <h3>Tapukuy 1/3</h3>
+                    <p>¿Imaraykum wiksallikuy qallariypi aswan hisp'ayta munanchik?</p>
+                    <ul id="options-4-1">
+                        <li data-correct="false">
+                            <label for="q4-1-a">
+                                <input type="radio" id="q4-1-a" name="q4-1" value="a">
+                                A) Aswan ch'akichikusqanchikrayku.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-1-b">
+                                <input type="radio" id="q4-1-b" name="q4-1" value="b">
+                                B) Wawa hatunyachkasqanrayku.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q4-1-c">
+                                <input type="radio" id="q4-1-c" name="q4-1" value="c">
+                                C) K'ispi wiñaspa hisp'ay puruta ñit'isqanrayku.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-1-d">
+                                <input type="radio" id="q4-1-d" name="q4-1" value="d">
+                                D) Hisp'ay unquypa unanchanmi.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-4-1" class="quiz-feedback">
+                        <p>Wiksallikuy qallariypiqa, k'ispi wiñayta qallarin, uranpi kaq hisp'ay puruta ñit'ispa. Chaymi hisp'ay puru mana hunt'asqa hunt'ananpaq, chayrayku aswan hisp'ayta munanchik.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('4-1', 4)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('4', 1)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q4-2" class="question-container">
+                    <h3>Tapukuy 2/3</h3>
+                    <p>¿Imatam ruwana sichus wiksallikuy pachapi sapa kuti utaq askha yawar ch'uqchuyta rikunki?</p>
+                    <ul id="options-4-2">
+                        <li data-correct="false">
+                            <label for="q4-2-a">
+                                <input type="radio" id="q4-2-a" name="q4-2" value="a">
+                                A) Kikinmanta sayananta suyay.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-2-b">
+                                <input type="radio" id="q4-2-b" name="q4-2" value="b">
+                                B) Nanaypaq hampikunata upyay.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q4-2-c">
+                                <input type="radio" id="q4-2-c" name="q4-2" value="c">
+                                C) Utqaylla hampina wasiman riy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-2-d">
+                                <input type="radio" id="q4-2-d" name="q4-2" value="d">
+                                D) Aswan kuyuriyta ruway ch'uqchuy sayananpaq.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-4-2" class="quiz-feedback">
+                        <p>Sichus ch'uqchuykuna sapa kuti utaq askha, astawanraq wiksa nanaywan kaptinqa, utqaylla hampina wasiman rinam.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('4-2', 4)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('4', 2)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q4-3" class="question-container">
+                    <h3>Tapukuy 3/3</h3>
+                    <p>¿Imaraykum wiksallikuy pachapi wasa nanay (lumbago) kan?</p>
+                    <ul id="options-4-3">
+                        <li data-correct="false">
+                            <label for="q4-3-a">
+                                <input type="radio" id="q4-3-a" name="q4-3" value="a">
+                                A) Vitamina C pisiyasqanrayku.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-3-b">
+                                <input type="radio" id="q4-3-b" name="q4-3" value="b">
+                                B) Pisi unuta upyasqanrayku.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q4-3-c">
+                                <input type="radio" id="q4-3-c" name="q4-3" value="c">
+                                C) Llasay yapakusqanrayku chaymanta llasay chawpi tikrakusqanrayku.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q4-3-d">
+                                <input type="radio" id="q4-3-d" name="q4-3" value="d">
+                                D) Mana samasqanrayku.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-4-3" class="quiz-feedback">
+                        <p>Lumbagoqa aswan wiksallikuqkunapim kan. Llasay yapakusqan chaymanta wasa tullu k'umukusqanmi chaypa raykun.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('4-3', 4)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('4', 3)">Yachay Taripayta Tukuchiy</button>
+                    </div>
+                </div>
+
+                <div id="end-message-4" class="end-message">
+                    <h2>¡Kay yachay taripayta tukuchirqunki!</h2>
+                    <button class="restart-button" onclick="resetQuiz('4')">Hukmanta qallariy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('salud-emocional-1')">
+                <span>Yachay Taripay: Sunqu Allin Kawsay (Yachaykuna) </span>
+                <span>▼</span>
+            </div>
+            <div id="salud-emocional-1" class="quiz-content">
+                <div id="q5-1" class="question-container active">
+                    <h3>Tapukuy 1/3</h3>
+                    <p>Yachachikuyman hina, ¿ima ninantaq allin sunqu kawsay?</p>
+                    <ul id="options-5-1">
+                        <li data-correct="false">
+                            <label for="q5-1-a">
+                                <input type="radio" id="q5-1-a" name="q5-1" value="a">
+                                A) Mana hayk'aqpas llakisqa utaq phiñasqa kay.
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q5-1-b">
+                                <input type="radio" id="q5-1-b" name="q5-1" value="b">
+                                B) Allin kayta waqaychay chaymanta sasachakuykunata atipay mana paykunawan atipachikuspa.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-1-c">
+                                <input type="radio" id="q5-1-c" name="q5-1" value="c">
+                                C) Huk runakunamanta karunchakuy llakikunamanta ayqinapaq.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-1-d">
+                                <input type="radio" id="q5-1-d" name="q5-1" value="d">
+                                D) Aswan llank'ay sasachakuykunapi mana yuyaykunanpaq.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-5-1" class="quiz-feedback">
+                        <p>Allin sunqu kawsayniyuq runaqa sapa p'unchaw kawsayninpi allin kayninta waqaychan chaymanta sasachakuykunata atipan mana llakikuykunawan atipachikuspa.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('5-1', 5)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('5', 1)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q5-2" class="question-container">
+                    <h3>Tapukuy 2/3</h3>
+                    <p>¿Imataq "kallpachakuy"?</p>
+                    <ul id="options-5-2">
+                        <li data-correct="true">
+                            <label for="q5-2-a">
+                                <input type="radio" id="q5-2-a" name="q5-2" value="a">
+                                A) Sasachakuykunamanta allinyay chaymanta aswan kallpasapa lluqsiy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-2-b">
+                                <input type="radio" id="q5-2-b" name="q5-2" value="b">
+                                B) Llapan sasachakuykunamanta ayqiy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-2-c">
+                                <input type="radio" id="q5-2-c" name="q5-2" value="c">
+                                C) Ima daňomantapas hunt'asqa hark'akuy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-2-d">
+                                <input type="radio" id="q5-2-d" name="q5-2" value="d">
+                                D) Mana tikrakuq kay.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-5-2" class="quiz-feedback">
+                        <p>Kallpachakuyqa runapa atipayninmi sasa pachakunata allinta apanapaq chaymanta atipanapaq, astawanraq kallpasapa lluqsispa. Manam mana tikrakuq kaychu, aswanpas wiñachiq atipaymi.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('5-2', 5)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('5', 2)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q5-3" class="question-container">
+                    <h3>Tapukuy 3/3</h3>
+                    <p>¿Ima ruwaykunatam sunqu allin kawsayta qhawanapaq rimarinku?</p>
+                    <ul id="options-5-3">
+                        <li data-correct="true">
+                            <label for="q5-3-a">
+                                <input type="radio" id="q5-3-a" name="q5-3" value="a">
+                                A) Kurku kuyuriyta ruway, masikunawan kay chaymanta pukllaykunata maskhay.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-3-b">
+                                <input type="radio" id="q5-3-b" name="q5-3" value="b">
+                                B) Hamuq pachapa sasachakuyninkunamanta llakikuy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-3-c">
+                                <input type="radio" id="q5-3-c" name="q5-3" value="c">
+                                C) Sasachakuykunamanta mana rimay ama huk runakunata phiñachinapaq.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q5-3-d">
+                                <input type="radio" id="q5-3-d" name="q5-3" value="d">
+                                D) Llank'ayllapi yuyaykuy yuyayta ch'usaqyachinapaq.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-5-3" class="quiz-feedback">
+                        <p>Kurku kuyuriyta ruway, chanin runakunawan kay chaymanta pukllaykuna kayqa wakin huch'uy ruwaykunam sunqu allin kawsayta waqaychanapaq.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('5-3', 5)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('5', 3)">Yachay Taripayta Tukuchiy</button>
+                    </div>
+                </div>
+
+                <div id="end-message-5" class="end-message">
+                    <h2>¡Kay yachay taripayta tukuchirqunki!</h2>
+                    <button class="restart-button" onclick="resetQuiz('5')">Hukmanta qallariy</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quiz-section">
+            <div class="quiz-header" onclick="toggleQuiz('primeros-auxilios-3')">
+                <span>Yachay Taripay: Ñawpaq Yanapakuykuna (Miyuykuna chaymanta aswan) </span>
+                <span>▼</span>
+            </div>
+            <div id="primeros-auxilios-3" class="quiz-content">
+                <div id="q6-1" class="question-container active">
+                    <h3>Tapukuy 1/3</h3>
+                    <p>Mikhuspa miyusqa kaqtin, ¿ima ñawpaq ruwanatam ruwana?</p>
+                    <ul id="options-6-1">
+                        <li data-correct="true">
+                            <label for="q6-1-a">
+                                <input type="radio" id="q6-1-a" name="q6-1" value="a">
+                                A) Ima miyuta chaymanta hayk'ata mikhusqanta riqsiyta munay.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-1-b">
+                                <input type="radio" id="q6-1-b" name="q6-1" value="b">
+                                B) Ima liquidotapas quy miyuta chulluchinanpaq.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-1-c">
+                                <input type="radio" id="q6-1-c" name="q6-1" value="c">
+                                C) Utqaylla ñuñuta quy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-1-d">
+                                <input type="radio" id="q6-1-d" name="q6-1" value="d">
+                                D) Utqaylla aqtuchiy.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-6-1" class="quiz-feedback">
+                        <p>Ñawpaq ruwanaqa "ima miyuta riqsiy" allinta neutralizanapaq. Aqtuchiyqa wakin kutillapim ruwana chaymanta hampiqpa qhawasqanwan.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('6-1', 6)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('6', 1)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+                
+                <div id="q6-2" class="question-container">
+                    <h3>Tapukuy 2/3</h3>
+                    <p>Sichus huk runa yuyayninmanta chinkan (lipotimia), ¿imatam ruwana?</p>
+                    <ul id="options-6-2">
+                        <li data-correct="true">
+                            <label for="q6-2-a">
+                                <input type="radio" id="q6-2-a" name="q6-2" value="a">
+                                A) Pampa sirichiy chaymanta chakinkunata hoqariy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-2-b">
+                                <input type="radio" id="q6-2-b" name="q6-2" value="b">
+                                B) Misk'i unuta quy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-2-c">
+                                <input type="radio" id="q6-2-c" name="q6-2" value="c">
+                                C) Mikhuyta quy kallpan kutirinanpaq.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-2-d">
+                                <input type="radio" id="q6-2-d" name="q6-2" value="d">
+                                D) Wayrachiy chaymanta uyaman unuta ch'aqchuy.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-6-2" class="quiz-feedback">
+                        <p>Lipotimia kaqtinqa, "runata chakinkuna 45° hoqarisqa sirichina" ñutquman yawar allinta rinanpaq. Hinallataqmi p'achanta kacharina chaymanta samasqanta qhawana.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('6-2', 6)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('6', 2)">Qatiq tapukuy</button>
+                    </div>
+                </div>
+
+                <div id="q6-3" class="question-container">
+                    <h3>Tapukuy 3/3</h3>
+                    <p>Tullu p'akisqa kaqtin, ¿ima ñawpaq ruwanatam ruwana?</p>
+                    <ul id="options-6-3">
+                        <li data-correct="false">
+                            <label for="q6-3-a">
+                                <input type="radio" id="q6-3-a" name="q6-3" value="a">
+                                A) Tulluta allichayta munay (p'akisqata allichay).
+                            </label>
+                        </li>
+                        <li data-correct="true">
+                            <label for="q6-3-b">
+                                <input type="radio" id="q6-3-b" name="q6-3" value="b">
+                                B) Runata utaq p'akisqa kaqta mana kuyuchiy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-3-c">
+                                <input type="radio" id="q6-3-c" name="q6-3" value="c">
+                                C) Nanaypaq hampita utqaylla quy.
+                            </label>
+                        </li>
+                        <li data-correct="false">
+                            <label for="q6-3-d">
+                                <input type="radio" id="q6-3-d" name="q6-3" value="d">
+                                D) Wayrachiy chaymanta uyaman unuta ch'aqchuy.
+                            </label>
+                        </li>
+                    </ul>
+                    <div id="feedback-6-3" class="quiz-feedback">
+                        <p>Tullu p'akisqa kaqtinqa, ancha chaninmi "p'akisqa kaqta mana kuyuchiy" ama kirita aswan sasachananpaq. Manam hayk'aqpas p'akisqata allichaytapas tulluta allichaytapas munanachu.</p>
+                    </div>
+                    <div class="actions">
+                        <button class="show-result" onclick="checkAnswer('6-3', 6)">Kutichiyta rikuchiy</button>
+                        <button class="next-button" onclick="nextQuestion('6', 3)">Yachay Taripayta Tukuchiy</button>
+                    </div>
+                </div>
+
+                <div id="end-message-6" class="end-message">
+                    <h2>¡Kay yachay taripayta tukuchirqunki!</h2>
+                    <button class="restart-button" onclick="resetQuiz('6')">Hukmanta qallariy</button>
+                </div>
+            </div>
+        </div>
+         </section>
+
+
+
+        
+
+        <section id="preguntas_frecuentes" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Askha Tapukuykuna</h1>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Imataq sunqu allin kawsay?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Sunqu allin kawsayqa allin, thak chaymanta qasilla kaymi, qam kikiykiwan chaymanta muyuriyniykiwan allin kaspa. Kikin atipayniykikunata riqsiy kawsaypa sasachakuyninkunata allinta apanaykipaq.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Imataq kallpachakuy?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Kallpachakuyqa runapa atipayninmi sasa pachakunata allinta apanapaq chaymanta atipanapaq, astawanraq kallpasapa lluqsispa.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Allinchu wiksallikuy pachapi llakisqa kay?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Ancha allinmi sunqu tikrakuykuna kay, astawanraq ñawpaq chaymanta kimsa ñiqi killapi, hormona tikrakuyninrayku. Ichaqa, sichus tikrakuykuna nisyu utaq huk sasachakuykunawan kachkan, hampiqniykiwan rimanallaykim.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Imatam ruwayman wiksallikuy pachapi millayta allichanapaq?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Millayta allichanapaqqa, pichqa kutita p'unchawpi, pisillata mikhuy rimarikun. Chayhinam wiksa sapa kuti llank'anqa mana nisyuta hunt'aspa.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Imaynatam llakikuyta apayman?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Llakikuyta apanapaqqa, sapa p'unchaw ruwaykunata allinta wakichiy mana usqhaylla ruwanapaq. Huk ruwaykunaqa 15 minututa puriy, takiyta uyariy utaq huk masiykiwan rimay.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Imaynatam wiksallikuy pachapi lumbagota hark'akuyman?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Lumbagota atipanapaqqa, huch'uy t'aquyuq zapatukunawan puriy, aswan samay, llasata mana hoqariy chaymanta wasapi q'uñita churay rimarikun. Puñuspaqa, allinmi waqtanmanta puñuy huk almohadawan chankaykikunapura.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Imapaqmi ñawpaq yanapakuykuna?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Ñawpaq yanapakuykunapa chaninqa kawsaykunata qispichiy, aswan kirikunamanta hark'akuy chaymanta unquykunamanta chaymanta huk sasachakuykunamanta amachay.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>¿Imatam ruwana sichus huk runa yuyayninmanta chinkan?</span>
+            <span>▼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Sichus huk runa yuyayninmanta chinkan (lipotimia), pampa sirichina chakinkuna 45° hoqarisqa chaymanta p'achanta kunkapi, qhasqopi chaymanta wikrapi kacharina.</p>
+        </div>
+    </div>
+    
+    
+        </section>
+        <section id="aliados" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Huñunakuykusun</h1>
+    
+
+    <div class="aliados-card">
+        <h2>Yanapayniykiqa ancha chaninmi ayllunchikpaq</h2>
+        <p>Pallpatapi allin kawsayta allichanapaq llank'ayniykupi, yachaysapa chaymanta yanapakuq runakunayuqmi kachkaniku. Yachayniyki chaymanta kallpaykiqa askha runakunapa kawsaynintam tikranman.</p>
+        <p>Sichus allin kawsay yachaysapa kanki utaq yanapakuyta munanki, kay llank'ayman huñunakunaykipaq waqyaykiku. Huñusqaqa, aswan kallpasapa chaymanta allin kawsayniyuq ayllutam ruwasunman.</p>
+        <a href="#" class="btn-unete">¡Yanapakuq kayta munani!</a>
+        
+        <ul class="aliados-list">
+            <li><strong>Hampiqkuna chaymanta enfermerakuna:</strong> Hampiq yanapakuyta, tapukuykunata chaymanta ñawpaq yanapakuykunapi yachachiyta quspa.</li>
+            <li><strong>Psicólogokuna chaymanta terapeutakuna:</strong> Sunqu yanapakuyta chaymanta yuyay allin kawsay yachaykunata quspa.</li>
+            <li><strong>Nutricionistakuna:</strong> Ayllukunata allin chaymanta tariy atiy mikhuykunata wakichinankupaq yanapaspa.</li>
+            <li><strong>Yachachiqkuna:</strong> Allin kawsay yachaykunamanta rimaykunata chaymanta yachaykunata llaqtapi quspa.</li>
+            <li><strong>Llaqtamanta yanapakuqkuna:</strong> Ruwaykunata wakichinapi, yachaykunata mast'arinapi chaymanta apaykachanapi yanapaspa.</li>
+        </ul>
+    </div>
+        </section>
+
+        <section id="comentarios" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Rimariykuna</h1>
+    
+
+    <div class="comentarios-form-container">
+        <h2>Uyariyta munaykiku</h2>
+        <p>Llank'ayniykupa sunqunpiqa Pallpata aylluta aswan allinta yanapanapaq sapa kuti allinyay munaymi kachkan. Yuyaychayniykikuna, rimariyniykikunaqa ñanniykuta pusariqmi. Sichus musuq yanapakuy yuyayniyki kan, webniykumanta rimariy utaq willakuyta munanki, qillqamuwaykuta mañaykiku. Sapa chaskiqa allinta ñawinchasqam chaymanta wiñanaykupaq yanapawan.</p>
+        
+        <form id="sugerencia-form" class="comentarios-form">
+            <div class="form-group">
+                <label for="nombre-sugerencia">Suti (Mana atiy):</label>
+                <input type="text" id="nombre-sugerencia" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="email-sugerencia">Chaski (Mana atiy):</label>
+                <input type="email" id="email-sugerencia" name="email">
+            </div>
+            <div class="form-group">
+                <label for="sugerencia-texto">Rimariy/Yuyaychay (Atiy):</label>
+                <textarea id="sugerencia-texto" name="sugerencia" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Apachiy</button>
+        </form>
+    </div>
+
+    <div id="modal-sugerencias" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModalSugerencias()">&times;</span>
+            <h2>¡Rimariy Apachisqa!</h2>
+            <p id="modal-mensaje-sugerencias"></p>
+            <button onclick="cerrarModalSugerencias()">Wichq'ay</button>
+        </div>
+    </div>
+    
+   
+        </section>
+
+
+        <section id="logros" class="nutricion-contenedor">
+            <h1 class="nutricion-titulo-principal">Ruwasqaykukuna</h1>
+            <p class="logros-intro">Kayhinatam ñawparispa kachkaniku allin kawsay ayllupaq:</p>
+
+            <div class="logros-grid">
+                <div class="logro-card">
+                    <span class="icon">✔️</span>
+                    <h3>1,200+</h3>
+                    <p>Webman haykuq runakuna</p>
+                </div>
+                <div class="logro-card">
+                    <span class="icon">🧑‍👩‍👧‍👦</span>
+                    <h3>50+</h3>
+                    <p>Yachachisqa ayllukuna</p>
+                </div>
+                <div class="logro-card">
+                    <span class="icon">🗣️</span>
+                    <h3>10</h3>
+                    <p>Yachachiy rimaykuna</p>
+                </div>
+                <div class="logro-card">
+                    <span class="icon">🗓️</span>
+                    <h3>3</h3>
+                    <p>Wakichisqa llank'aykuna</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cambios_proximos" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Hamuq Pachapa Ruwaykuna</h1>
+    
+    <div class="cambios-grid">
+        <div class="cambio-card">
+            <span class="icon">💜</span>
+            <h3>Aymara Simi</h3>
+            <p>Pisi pachamanta webpa huknin Aymara simipi kanqa ayllunchikman aswan chayanapaq.</p>
+        </div>
+        <div class="cambio-card">
+            <span class="icon">📢</span>
+            <h3>Rimay Ñawinchaq</h3>
+            <p>Rimay ñawinchaqta yapasaqku ñawsa runakunaman yachayta aypachinapaq.</p>
+        </div>
+        <div class="cambio-card">
+            <span class="icon">👨🏽‍⚕️</span>
+            <h3>Karumanta Yachachiy</h3>
+            <p>Musuq karumanta hampiq yachachiy yanapakuy kanqa karumanta tapukuykunata qunapaq.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="formulario" class="nutricion-contenedor">
+    <h1 class="nutricion-titulo-principal">Yanapakuyta Mañakuy</h1> 
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeM-u1amwZvW8jYEa2HimVfTYSp7UQZ_mhK3HhInS8zzxx3iQ/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    
+       </section>
+
+<section>
+    <audio id="background-music" loop>
+        <source src="mufo.mpeg" type="audio/mpeg">
+        Navegadorniykiqa manam takiyta uyarinmanchu.
+    </audio>
+
+    
+    
+    <button id="play-pause-button" class="audio-player-button">
+        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="audio-player-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" class="audio-player-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+    </button>
+
+    <script>
+        const audio = document.getElementById('background-music');
+        const playPauseButton = document.getElementById('play-pause-button');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+
+        playPauseButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+            } else {
+                audio.pause();
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+            }
+        });
+    </script>
+
+
+
+
+    </section>
+
+        <section id="boton_whatsapp">
+
+          
+<a href="https://wa.me/+51939536035?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20con%20el%20Centro%20Médico%20Allin%20Kawsay%20Digital%20de%20Pallpata" 
+   class="whatsapp-chat" 
+   target="_blank" 
+   title="Escríbenos por WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+
+
+            
+        </section>
+
+
+
+        
+        <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-seccion logo-footer">
+                <img src="logosinfnd.png" alt="Salud Pallpata Logo" class="logo-img-footer">
+                <p>"Qhawaykiku allin kawsayniykita, qhawaykiku qamta."</p>
+            </div>
+            
+            <div class="footer-seccion">
+                <h3>Utqay Ch'askinakuna</h3>
+                <ul>
+                    <li><a href="#inicio">Qallariy</a></li>
+                    <li><a href="#primeros-auxilios">Ñawpaq Yanapakuykuna</a></li>
+                    <li><a href="#psicologia">Yuyay Yachay</a></li>
+                    <li><a href="#nutricion">Allin Mikhuy</a></li>
+                    <li><a href="#campañas">HamUQ Llank'aykuna</a></li>
+                    <li><a href="#formulario">Yanapakuyta Mañakuy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-seccion">
+                <h3>Tupanakuy</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Maypi: Qusqu, Piruw</p>
+                <p><i class="fa-solid fa-phone"></i> Karurimana: 939536035</p>
+                <p><i class="fa-solid fa-envelope"></i> Chaski: centro_desalud_pallpata_@gmail.com</p>
+            </div>
+            
+            <div class="footer-seccion redes-sociales">
+                <h3>Qatiwayku</h3>
+                <a href="https://www.facebook.com/share/1FaDhMMzDH/" class="social-icon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@allin_kawsay_digital" class="social-icon" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://x.com/KawsayAlli16308?t=hI7GV6dPXQFdedr04oytOQ&s=08" class="social-icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@allin.kawsay1?_t=ZM-8xmWcHszm5u&_r=1" class="social-icon" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Allin Kawsay Digital. Llapan hayñikuna waqaychasqa.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        
+        let slideActual = 0;
+        const slides = document.querySelectorAll('.slide');
+        const puntos = document.querySelectorAll('.punto');
+
+        function moverSlide(direccion) {
+            slideActual += direccion;
+            if (slideActual < 0) slideActual = slides.length - 1;
+            if (slideActual >= slides.length) slideActual = 0;
+            actualizarCarrusel();
+        }
+
+        function irAlSlide(indice) {
+            slideActual = indice;
+            actualizarCarrusel();
+        }
+
+        function actualizarCarrusel() {
+            document.querySelector('.carrusel').style.transform = `translateX(-${slideActual * 100}%)`;
+            puntos.forEach((punto, i) => {
+                punto.classList.toggle('activo', i === slideActual);
+            });
+        }
+        
+        // JS para el Modal de Primeros Auxilios
+        function abrirModal(tipo) {
+            const modal = document.getElementById("modal-auxilios");
+            const titulo = modal.querySelector("#modal-titulo");
+            const texto = modal.querySelector("#modal-texto");
+
+            if (tipo === "heridas-leves") {
+                titulo.textContent = "Huch'uy Kirikunata Hampiy";
+                texto.innerHTML = "<strong>1. Makikunata mayllikuy:</strong> Unuwan jabonwan unquykunamanta hark'akunapaq.<br>"
+                                + "<strong>2. Kirita ch'uyanchay:</strong> Unuwan llamp'u jabonwan maylliy. Qhillita hurquy.<br>"
+                                + "<strong>3. Yawar ch'uqchuyta sayachiy:</strong> Ch'uya gasawan ñit'iy.<br>"
+                                + "<strong>4. Antibiótico nisqata churay:</strong> Sichus munan, antibiótico hampita churay.<br>"
+                                + "<strong>5. Kirita p'istuy:</strong> Ch'uya p'istunawan p'istuy.<br>"
+                                + "<strong>6. P'istunata tikray:</strong> Sapa kuti kirita ch'uya kananpaq.";
+            } else if (tipo === "heridas-graves") {
+                titulo.textContent = "Hatun Kirikunata Hampiy";
+                texto.innerHTML = "<strong>Ama wasipi kirita hampiyta munaychu:</strong> Hampiq yanapakuyta maskhay.<br>"
+                                + "<strong>106man waqyay:</strong> Utqay yanapakuyman waqyay.<br>"
+                                + "<strong>Ama kirisqata kuyuchiychu:</strong> Astawanraq tullu p'akisqa kasqanta yuyaspa.<br>"
+                                + "<strong>Ama ch'uqurisqa imakunata hurquyuchu:</strong> Chayqa kirita aswan sasachanman.<br>"
+                                + "<strong>Kirita mana kuyuchiy:</strong> Tablillakunawan chaymanta unquqta apay.";
+            } else if (tipo === "recomendaciones") {
+                titulo.textContent = "Kirikunata Qhawanapaq Rimariykuna";
+                texto.innerHTML = "<strong>Kirita qhaway:</strong> Unquy unanchankunata qhaway.<br>"
+                                + "<strong>Yachaysapawan rimay:</strong> Sichus kiri mana allinyanchu.<br>"
+
+                                + "<strong>Kirita ch'uyata waqaychay:</strong> Chaymanta p'istunata sapa kuti tikray.<br>"
+                                + "<strong>Intimanta karunchakuy:</strong> Allinyayta hark'anman.<br>"
+                                + "<strong>Tétanos hampi:</strong> Sichus kiri qhillichasqa kachkan.";
+            } else if (tipo === "intoxicacion") {
+                titulo.textContent = "Miyusqa Kaptin Ñawpaq Yanapakuykuna";
+                texto.innerHTML = "<strong>1. Miyuta riqsiy:</strong> Yachay imata runa mikhusqanta.<br>"
+                                + "<strong>2. Ama aqtuchiychu:</strong> Hampiq mana niptinqa.<br>"
+                                + "<strong>3. 106man waqyay utaq hampina wasiman riy:</strong> Sichus samay sasachan utaq yuyayninmanta chinkan.<br>"
+                                + "<strong>4. Unquqta thaklla waqaychay:</strong> Ama hatun kuyuriykunata ruwaychu.<br>"
+                                + "<strong>5. Hampiqman willay:</strong> Ima mikhusqanta chaymanta unanchankunata.";
+            } else if (tipo === "alergias") {
+                titulo.textContent = "Hatun Alergia Unquy Kaptin Imayna Ruwana";
+                texto.innerHTML = "<strong>1. Unanchankunata riqsiy:</strong> Samay sasachay, punkiy, qara pukyuy.<br>"
+                                + "<strong>2. Epinefrina nisqata churay sichus kan:</strong> Utqaylla churay shock anafiláctico kaqtin.<br>"
+                                + "<strong>3. 106man waqyay:</strong> Hatun alergia unquykuna utqay yanapakuyta munan.<br>"
+                                + "<strong>4. Unquqta sirisqa waqaychay:</strong> Chakinkunata hoqariy sichus kallpan pisiyasqa kachkan.<br>"
+                                + "<strong>5. Ama imatapas siminman quyuchu:</strong> Samay ñanta aswan wichq'anman.";
+            } else if (tipo === "quemaduras") {
+                titulo.textContent = "Ruphaykunapaq Ñawpaq Yanapakuykuna";
+                texto.innerHTML = "<strong>1. Ruphayta riqsiy:</strong> Ñawpaq, iskay utaq kimsa ñiqi gradopi.<br>"
+                                + "<strong>2. Ama ch'uñuta churaychu:</strong> Qarata aswan daňanman.<br>"
+                                + "<strong>3. Ruphayta q'uñi unuwan chiriyachiy:</strong> 10-15 minututa.<br>"
+                                + "<strong>4. Ch'uya p'istunawan p'istuy:</strong> Ama utkhuta churaychu, k'askakunmanmi.<br>"
+                                + "<strong>5. Hampiq yanapakuyta maskhay sichus hatun:</strong> Sichus p'ulukuna utaq ukhu kiri kan.";
+            }
+            modal.style.display = "flex";
+        }
+        function cerrarModalAuxilios() {
+            document.getElementById("modal-auxilios").style.display = "none";
+        }
+        
+        // JS para el Formulario de Solicitud
+        document.querySelector('.formulario-contacto').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var nombre = document.getElementById("nombre").value;
+            document.getElementById("modal-mensaje").innerText = "¡Añaykiku mañakusqaykimanta, " + nombre + "! Mañakusqaykita chaskirqaykuñam, pisi pachamanta qanwan tupasaqku.";
+            document.getElementById("modal-formulario").style.display = "flex";
+            this.reset();
+        });
+
+        function cerrarModalFormulario() {
+            document.getElementById("modal-formulario").style.display = "none";
+        }
+
+    </script>
+    <script>
+        let quizzes = {
+            '1': { currentQuestion: 1, totalQuestions: 3 },
+            '2': { currentQuestion: 1, totalQuestions: 3 },
+            '3': { currentQuestion: 1, totalQuestions: 3 },
+            '4': { currentQuestion: 1, totalQuestions: 3 },
+            '5': { currentQuestion: 1, totalQuestions: 3 },
+            '6': { currentQuestion: 1, totalQuestions: 3 }
+        };
+
+        function toggleQuiz(quizId) {
+            const quizContent = document.getElementById(quizId);
+            const arrow = quizContent.previousElementSibling.querySelector('span:last-child');
+            
+            quizContent.classList.toggle('active');
+            arrow.textContent = quizContent.classList.contains('active') ? '▲' : '▼';
+        }
+
+        function checkAnswer(questionId, quizNumber) {
+            const optionsList = document.getElementById(`options-${questionId}`);
+            const feedbackDiv = document.getElementById(`feedback-${questionId}`);
+            const actionsDiv = optionsList.parentElement.querySelector('.actions');
+            const showResultButton = actionsDiv.querySelector('.show-result');
+            const nextButton = actionsDiv.querySelector('.next-button');
+            const selectedInput = optionsList.querySelector('input[name="q' + questionId + '"]:checked');
+
+            if (selectedInput) {
+                optionsList.querySelectorAll('li').forEach(item => {
+                    const input = item.querySelector('input');
+                    const label = item.querySelector('label');
+                    
+                    if (item.dataset.correct === 'true') {
+                        item.classList.add('correct');
+                        label.innerHTML += '<span class="result-icon">✔</span>';
+                    } else if (input.checked) {
+                        item.classList.add('incorrect');
+                        label.innerHTML += '<span class="result-icon">✖</span>';
+                    }
+                    input.disabled = true;
+                    label.style.pointerEvents = 'none';
+                });
+                feedbackDiv.classList.add('active');
+                showResultButton.style.display = 'none';
+                nextButton.style.display = 'block';
+
+                if (quizzes[quizNumber].currentQuestion === quizzes[quizNumber].totalQuestions) {
+                    nextButton.textContent = 'Yachay Taripayta Tukuchiy';
+                }
+            }
+        }
+
+        function nextQuestion(quizNumber, questionNumber) {
+            document.getElementById(`q${quizNumber}-${questionNumber}`).classList.remove('active');
+            quizzes[quizNumber].currentQuestion++;
+            
+            if (quizzes[quizNumber].currentQuestion <= quizzes[quizNumber].totalQuestions) {
+                document.getElementById(`q${quizNumber}-${quizzes[quizNumber].currentQuestion}`).classList.add('active');
+            } else {
+                document.getElementById(`end-message-${quizNumber}`).style.display = 'block';
+            }
+        }
+
+        function resetQuiz(quizNumber) {
+            const quizContent = document.getElementById(`primeros-auxilios-${quizNumber}`);
+            quizContent.querySelectorAll('.question-container').forEach(q => q.classList.remove('active'));
+            quizContent.querySelectorAll('li').forEach(item => {
+                item.classList.remove('correct', 'incorrect');
+                const input = item.querySelector('input');
+                input.checked = false;
+                input.disabled = false;
+                const label = item.querySelector('label');
+                label.style.pointerEvents = 'auto';
+                const resultIcon = label.querySelector('.result-icon');
+                if (resultIcon) {
+                    resultIcon.remove();
+                }
+            });
+            quizContent.querySelectorAll('.quiz-feedback').forEach(feedback => {
+                feedback.classList.remove('active');
+            });
+            quizContent.querySelectorAll('.show-result').forEach(button => {
+                button.style.display = 'inline-block';
+            });
+            quizContent.querySelectorAll('.next-button').forEach(button => {
+                button.style.display = 'none';
+            });
+            quizContent.querySelector('.end-message').style.display = 'none';
+            quizzes[quizNumber].currentQuestion = 1;
+            document.getElementById(`q${quizNumber}-1`).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar mostrando la primera pregunta de cada quiz al cargar
+            for (const quiz in quizzes) {
+                document.getElementById(`q${quiz}-1`).classList.add('active');
+            }
+        });
+
+    </script>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const arrow = element.querySelector('span:last-child');
+            
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            element.classList.toggle('active');
+        }
+    </script>
+    <script>
+        document.getElementById('sugerencia-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var nombre = document.getElementById("nombre-sugerencia").value;
+            var mensajeModal = "¡Añay! Rimariyniykita chaskirqaykuñam. Yuyaychayniykiqa ancha chaninmi ñuqaykupaq.";
+
+            if (nombre) {
+                mensajeModal = "¡Añay rimariyniykimanta, " + nombre + "! Chaskiykita chaskirqaykuñam. Yuyaychayniykiqa ancha chaninmi ñuqaykupaq.";
+            }
+
+            document.getElementById("modal-mensaje-sugerencias").innerText = mensajeModal;
+            document.getElementById("modal-sugerencias").style.display = "flex";
+            
+            this.reset();
+
+            // Esto evita la notificación de reenvío del formulario
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+            }
+        });
+
+        function cerrarModalSugerencias() {
+            document.getElementById("modal-sugerencias").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
