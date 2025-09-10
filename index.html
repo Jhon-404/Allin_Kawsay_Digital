@@ -1761,7 +1761,7 @@
             });
         }
         
-        // JS para el Modal de Primeros Auxilios
+        
         function abrirModal(tipo) {
             const modal = document.getElementById("modal-auxilios");
             const titulo = modal.querySelector("#modal-titulo");
@@ -1817,7 +1817,7 @@
             document.getElementById("modal-auxilios").style.display = "none";
         }
         
-        // JS para el Formulario de Solicitud
+       
         document.querySelector('.formulario-contacto').addEventListener('submit', function(event) {
             event.preventDefault();
             var nombre = document.getElementById("nombre").value;
@@ -1923,7 +1923,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Inicializar mostrando la primera pregunta de cada quiz al cargar
+            
             for (const quiz in quizzes) {
                 document.getElementById(`q${quiz}-1`).classList.add('active');
             }
@@ -1955,7 +1955,7 @@
             
             this.reset();
 
-            // Esto evita la notificación de reenvío del formulario
+            
             if (window.history.replaceState) {
                 window.history.replaceState(null, null, window.location.href);
             }

@@ -8,10 +8,8 @@
 body {
     line-height: 1.6;
     color: #333;
-    background-color: #F7F9FA; /* Fondo general más claro */
+    background-color: #F7F9FA;
 }
-
-/* --- ESTILOS CORREGIDOS PARA LA CABECERA Y MENÚ --- */
 
 .cabecera {
     display: flex;
@@ -37,7 +35,6 @@ body {
     height: 25px;
 }
 
-/* Menú de navegación (Escritorio) */
 .menu {
     display: flex;
     align-items: center;
@@ -54,21 +51,20 @@ body {
     text-align: center;
     font-size: 16px;
     background-color: transparent;
-    border: none; /* Quita el borde de los botones dentro del nav */
+    border: none;
 }
 
 
 .boton-cabecera:not(.logo):hover {
-    background-color: #3E8ACC; /* Azul primario para hover */
+    background-color: #3E8ACC;
     transform: scale(1.05);
 }
 
 .boton-cabecera.activo {
-    background-color: #89CFF0 !important; /* Celeste para estado activo */
+    background-color: #89CFF0 !important;
     box-shadow: 0 0 10px rgba(137, 207, 240, 0.5);
 }
 
-/* Botón hamburguesa (Oculto por defecto en escritorio) */
 .menu-toggle {
     display: none;
     font-size: 28px;
@@ -78,7 +74,6 @@ body {
     cursor: pointer;
 }
 
-/* Menú desplegable (Dropdown) */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -116,9 +111,6 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-/* --- FIN DE ESTILOS DE CABECERA --- */
-
 
 .portada {
     background: linear-gradient(rgba(42, 93, 132, 0.8), rgba(42, 93, 132, 0.8)),
@@ -163,7 +155,7 @@ body {
 .titulo-video {
     margin-top: 10px;
     font-weight: bold;
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
 }
 
 .carrusel-btn {
@@ -196,14 +188,14 @@ body {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background-color: #B0E0E6; /* Celeste claro para punto inactivo */
+    background-color: #B0E0E6;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .punto.activo {
-    background-color: #2A5D84; /* Azul oscuro primario */
+    background-color: #2A5D84;
 }
 
 .primeros_auxilios {
@@ -262,7 +254,7 @@ body {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
 }
 
 
@@ -275,7 +267,7 @@ body {
 }
 
 h1 {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     margin-bottom: 20px;
 }
 
@@ -343,7 +335,7 @@ h1 {
 }
 
 .boton-enviar {
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
     color: white;
     border: none;
     padding: 12px;
@@ -353,7 +345,7 @@ h1 {
 }
 
 button {
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -363,7 +355,7 @@ button {
 }
 
 button:hover {
-    background-color: #89CFF0; /* Celeste para hover */
+    background-color: #89CFF0;
 }
 
 .error-message {
@@ -437,7 +429,7 @@ button:hover {
 }
 
 .menu-item h3 {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     margin-bottom: 0;
     font-size: 1.4em;
 }
@@ -448,7 +440,7 @@ button:hover {
 }
 
 .psico-banner {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -489,7 +481,7 @@ button:hover {
 }
 
 .psico-imagen {
-    background: #E0F3FF; /* Fondo celeste muy claro */
+    background: #E0F3FF;
     color: #333;
     min-height: 150px;
     display: flex;
@@ -502,7 +494,7 @@ button:hover {
 }
 
 .psico-boton {
-    background: #3E8ACC; /* Azul primario */
+    background: #3E8ACC;
     color: #fff;
     padding: 25px 0;
     font-size: 1.1rem;
@@ -516,7 +508,7 @@ button:hover {
 }
 
 .psico-boton:hover {
-    background: #89CFF0; /* Celeste para hover */
+    background: #89CFF0;
 }
 
 .nutricion-contenedor {
@@ -528,12 +520,12 @@ button:hover {
 }
 
 .nutricion-titulo-principal {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     text-align: center;
     font-size: 2.8em;
     margin-bottom: 50px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #89CFF0; /* Celeste */
+    border-bottom: 2px solid #89CFF0;
 }
 
 .nutricion-seccion {
@@ -557,7 +549,7 @@ button:hover {
 }
 
 .nutricion-texto h2 {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     font-size: 2.2em;
     margin-bottom: 20px;
     line-height: 1.3;
@@ -602,7 +594,7 @@ button:hover {
 }
 
 .nutricion-titulo-secundario {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     font-size: 2.4em;
     margin-bottom: 40px;
 }
@@ -633,7 +625,7 @@ button:hover {
 }
 
 .nutricion-card h3 {
-    color: #3E8ACC; /* Azul primario */
+    color: #3E8ACC;
     font-size: 1.4em;
     margin-bottom: 15px;
 }
@@ -647,7 +639,7 @@ button:hover {
 
 .nutricion-boton-pequeño {
     display: inline-block;
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
     color: white;
     padding: 10px 18px;
     border-radius: 5px;
@@ -657,11 +649,11 @@ button:hover {
 }
 
 .nutricion-boton-pequeño:hover {
-    background-color: #89CFF0; /* Celeste para hover */
+    background-color: #89CFF0;
 }
 
 .nutricion-cta {
-    background-color: #2A5D84; /* Azul oscuro primario */
+    background-color: #2A5D84;
     color: white;
     padding: 50px 30px;
     border-radius: 10px;
@@ -676,7 +668,7 @@ button:hover {
 
 .nutricion-boton-principal {
     display: inline-block;
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
     color: white;
     padding: 15px 30px;
     border-radius: 30px;
@@ -687,12 +679,12 @@ button:hover {
 }
 
 .nutricion-boton-principal:hover {
-    background-color: #89CFF0; /* Celeste para hover */
+    background-color: #89CFF0;
     transform: scale(1.05);
 }
 
 .footer {
-    background-color: #2A5D84; /* Azul oscuro primario */
+    background-color: #2A5D84;
     color: white;
     padding: 40px 20px;
     margin-top: 50px;
@@ -715,7 +707,7 @@ button:hover {
 }
 
 .footer-seccion h3 {
-    color: #89CFF0; /* Celeste */
+    color: #89CFF0;
     margin-bottom: 20px;
     font-size: 1.3em;
 }
@@ -736,7 +728,7 @@ button:hover {
 }
 
 .footer-seccion ul li a:hover {
-    color: #89CFF0; /* Celeste */
+    color: #89CFF0;
 }
 
 .footer-seccion p {
@@ -745,7 +737,7 @@ button:hover {
 
 .footer-seccion p i {
     margin-right: 8px;
-    color: #89CFF0; /* Celeste */
+    color: #89CFF0;
 }
 
 .logo-img-footer {
@@ -768,7 +760,7 @@ button:hover {
 }
 
 .redes-sociales .social-icon:hover {
-    color: #89CFF0; /* Celeste */
+    color: #89CFF0;
     transform: scale(1.1);
 }
 
@@ -789,7 +781,6 @@ button:hover {
     border-radius: 10px;
 }
 
-/*estilios de trivia*/
 .quiz-section {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -799,7 +790,7 @@ button:hover {
 }
 .quiz-header {
     padding: 15px;
-    background-color: #2A5D84; /* Azul oscuro primario */
+    background-color: #2A5D84;
     color: white;
     cursor: pointer;
     display: flex;
@@ -874,10 +865,10 @@ button:hover {
     margin-right: 10px;
 }
 .quiz-content .show-result {
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
 }
 .quiz-content .next-button {
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
     display: none;
 }
 .quiz-content .restart-button {
@@ -892,13 +883,13 @@ button:hover {
     margin-bottom: 15px;
     padding: 10px;
     background-color: #F7F9FA;
-    border-left: 4px solid #3E8ACC; /* Azul primario */
+    border-left: 4px solid #3E8ACC;
     display: none;
 }
 .quiz-feedback.active {
     display: block;
 }
-/*estilos de preguntas frecuentes*/
+
 .faq-item {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -908,7 +899,7 @@ button:hover {
 }
 .faq-question {
     padding: 15px;
-    background-color: #2A5D84; /* Azul oscuro primario */
+    background-color: #2A5D84;
     color: white;
     cursor: pointer;
     display: flex;
@@ -934,7 +925,6 @@ button:hover {
     transform: rotate(180deg);
 }
 
-/*estilo para unete al equipo*/
 .aliados-card {
     background-color: #fff;
     border-radius: 8px;
@@ -943,7 +933,7 @@ button:hover {
     text-align: center;
 }
 .aliados-card h2 {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 15px;
@@ -954,7 +944,7 @@ button:hover {
     margin-bottom: 20px;
 }
 .aliados-card .btn-unete {
-    background-color: #2A5D84; /* Azul oscuro primario */
+    background-color: #2A5D84;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -963,7 +953,7 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 .aliados-card .btn-unete:hover {
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
 }
 .aliados-list {
     list-style: none;
@@ -973,7 +963,7 @@ button:hover {
 }
 .aliados-list li {
     background-color: #F7F9FA;
-    border-left: 4px solid #2A5D84; /* Azul oscuro primario */
+    border-left: 4px solid #2A5D84;
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 5px;
@@ -981,10 +971,9 @@ button:hover {
     color: #333;
 }
 .aliados-list li strong {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
 }
 
-/*estilos de cometarios*/
  .comentarios-form-container {
     background-color: #fff;
     border-radius: 8px;
@@ -993,7 +982,7 @@ button:hover {
     text-align: center;
 }
 .comentarios-form-container h2 {
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 10px;
@@ -1033,7 +1022,7 @@ button:hover {
     height: 100px;
 }
 .comentarios-form .btn-enviar {
-    background-color: #2A5D84; /* Azul oscuro primario */
+    background-color: #2A5D84;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -1044,10 +1033,9 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 .comentarios-form .btn-enviar:hover {
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
 }
 
-/*logros*/
 .logros-intro {
     text-align: center;
     font-size: 1.1em;
@@ -1068,7 +1056,7 @@ button:hover {
 }
 .logro-card .icon {
     font-size: 2.5em;
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     margin-bottom: 10px;
 }
 .logro-card h3 {
@@ -1082,7 +1070,6 @@ button:hover {
     font-size: 1em;
 }
 
-/*proximos eventos*/
 .cambios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1105,7 +1092,7 @@ button:hover {
 .cambio-card h3 {
     margin: 0;
     font-size: 1.1em;
-    color: #2A5D84; /* Azul oscuro primario */
+    color: #2A5D84;
     font-weight: bold;
 }
 .cambio-card p {
@@ -1118,12 +1105,11 @@ button:hover {
     text-align: center;
 }
 
-/*boton de audio*/
 .audio-player-button {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    background-color: #48D1CC; /* Turquesa acento */
+    background-color: #48D1CC;
     color: white;
     padding: 1rem; 
     border: none;
@@ -1138,13 +1124,13 @@ button:hover {
 }
 
 .audio-player-button:hover {
-    background-color: #3E8ACC; /* Azul primario */
+    background-color: #3E8ACC;
     transform: scale(1.1);
 }
 
 .audio-player-button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px #3E8ACC; /* Azul primario */
+    box-shadow: 0 0 0 3px #3E8ACC;
 }
 
 .audio-player-icon {
@@ -1178,10 +1164,10 @@ button:hover {
 }
 
 .iframe-container {
-  position: relative; /* Base para el posicionamiento del iframe */
+  position: relative;
   overflow: hidden;
-  width: 100%; /* Ocupa el ancho completo de su contenedor padre */
-  padding-top: 75%; /* Proporción de aspecto (ej. para 4:3). Ajusta este valor si es necesario */
+  width: 100%;
+  padding-top: 75%;
 }
 .iframe-container iframe {
   position: absolute;
@@ -1191,8 +1177,6 @@ button:hover {
   height: 100%;
   border: 0;
 }
-
-/* --- ESTILOS RESPONSIVE --- */
 
 @media (max-width: 992px) {
     .menu-item {
@@ -1244,20 +1228,16 @@ button:hover {
 }
 
 
-/* --- ESTILOS PARA MÓVILES (CORREGIDO) --- */
 @media (max-width: 768px) {
-    /* Ajustes de cabecera para móvil */
     .cabecera {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    /* Muestra el botón hamburguesa */
     .menu-toggle {
         display: block;
     }
 
-    /* Oculta el menú de navegación por defecto */
     .menu {
         display: none;
         flex-direction: column;
@@ -1267,7 +1247,6 @@ button:hover {
         margin-top: 10px;
     }
 
-    /* Muestra el menú cuando tiene la clase 'active' */
     .menu.active {
         display: flex;
     }
@@ -1288,7 +1267,6 @@ button:hover {
         text-align: center;
     }
 
-    /* Otros ajustes generales para móvil */
     .portada {
         padding: 60px 20px;
     }
@@ -1369,7 +1347,7 @@ button:hover {
         padding: 12px 25px;
     }
 }
-/*audios*/
+
 .akd_player-container {
             width: 100%;
             max-width: 400px;
@@ -1452,48 +1430,36 @@ button:hover {
             color: #667781;
         }
 
-        /* --- Estilos específicos para los iconos de Font Awesome --- */
         .akd_player-btn i {
-            font-size: 20px; /* Controla el tamaño del icono */
-            color: white;   /* Controla el color del icono */
-            /* Pequeño ajuste para centrar visualmente el icono de play */
+            font-size: 20px;
+            color: white;
         }
         .akd_player-play-icon {
              margin-left: 3px;
         }
 
-
-        /* --- ESTILOS PARA EL LOGO CON TEXTO --- */
-
-/* Contenedor principal del logo (imagen + texto) */
 .logo {
-    display: flex;         /* Activa Flexbox para alinear los elementos */
-    align-items: center;   /* Centra verticalmente la imagen y el texto */
-    gap: 12px;             /* Espacio de 12px entre la imagen y el texto */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    transition: transform 0.3s ease; /* Transición suave para el hover */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
-/* Efecto al pasar el mouse sobre el logo */
 .logo:hover {
-    transform: scale(1.03); /* Agranda ligeramente el logo al pasar el mouse */
+    transform: scale(1.03);
 }
 
-/* Estilos para el texto "Munay kawsay" */
 .logo-texto {
-    font-size: 1.6em;      /* Tamaño de fuente grande para que destaque */
-    font-weight: bold;     /* Texto en negrita */
-    color: #FFFFFF;        /* Color blanco, como los otros botones */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
-    letter-spacing: 0.5px; /* Ligero espaciado entre letras */
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
 }
 
-/* --- AJUSTES RESPONSIVE PARA EL LOGO --- */
 @media (max-width: 768px) {
     .logo-texto {
-        /* Opcional: reduce el tamaño del texto en pantallas más pequeñas */
         font-size: 1.4em;
     }
 }
-
-
