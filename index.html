@@ -1510,16 +1510,17 @@
     
     
         </section>
-        <section id="aliados" class="nutricion-contenedor">
+        
+
+<section id="aliados" class="nutricion-contenedor">
     <h1 class="nutricion-titulo-principal">Únete al equipo</h1>
-    
 
     <div class="aliados-card">
         <h2>Tu apoyo es fundamental para nuestra comunidad</h2>
         <p>En nuestra misión por mejorar la salud y el bienestar en Pallpata, contamos con un equipo de profesionales y voluntarios comprometidos. Tu experiencia y dedicación pueden marcar una gran diferencia en la vida de muchas personas.</p>
         <p>Si eres un profesional de la salud o simplemente quieres colaborar, te invitamos a ser parte de este proyecto. Juntos, podemos construir una comunidad más fuerte y saludable.</p>
-        <a href="#formulario" class="btn-unete">¡Quiero ser voluntario!</a>
-        
+        <button class="btn-unete" onclick="abrirModalVoluntario()">¡Quiero ser voluntario!</button>
+
         <ul class="aliados-list">
             <li><strong>Médicos y enfermeros:</strong> Brindando atención médica, consultas y orientación en primeros auxilios.</li>
             <li><strong>Psicólogos y terapeutas:</strong> Ofreciendo apoyo emocional y talleres de bienestar mental.</li>
@@ -1528,7 +1529,71 @@
             <li><strong>Voluntarios de la comunidad:</strong> Apoyando en la organización de eventos, difusión de información y logística.</li>
         </ul>
     </div>
-        </section>
+</section>
+
+<div id="modal-voluntario" class="modal">
+    <div class="modal-contenido" style="max-width: 500px; max-height: 90vh; overflow-y: auto;">
+        <span class="cerrar" onclick="cerrarModalVoluntario()">&times;</span>
+        <h2>Formulario de Voluntariado</h2>
+        <p>¡Gracias por tu interés en unirte a nuestro equipo! Por favor, completa el siguiente formulario.</p>
+
+        <form id="voluntario-form" class="comentarios-form" style="padding: 0; box-shadow: none;">
+            <div class="form-group">
+                <label for="nombre-voluntario">Nombre completo (Obligatorio):</label>
+                <input type="text" id="nombre-voluntario" name="nombre" required>
+            </div>
+             <div class="form-group">
+                <label for="dni-voluntario">DNI (Obligatorio):</label>
+                <input type="text" id="dni-voluntario" name="dni" pattern="\d{8}" title="Debe contener 8 dígitos" required>
+            </div>
+            <div class="form-group">
+                <label for="email-voluntario">Correo electrónico (Obligatorio):</label>
+                <input type="email" id="email-voluntario" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono-voluntario">Teléfono / Celular:</label>
+                <input type="tel" id="telefono-voluntario" name="telefono">
+            </div>
+
+            <div class="form-group">
+                <label for="area-voluntario">Área de interés (Obligatorio):</label>
+                <div class="custom-select-wrapper">
+                    <select id="area-voluntario" name="area" required>
+                        <option value="" disabled selected>Selecciona un área</option>
+                        <option value="medicos">Médicos y enfermeros</option>
+                        <option value="psicologos">Psicólogos y terapeutas</option>
+                        <option value="nutricionistas">Nutricionistas</option>
+                        <option value="educadores">Educadores</option>
+                        <option value="comunidad">Voluntario de la comunidad</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="como-ayudar-voluntario">¿Cómo te gustaría ayudar?</label>
+                <textarea id="como-ayudar-voluntario" name="como-ayudar" placeholder="Ej: Dando charlas, apoyando en campañas, etc."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="porque-voluntario">¿Por qué te gustaría unirte al equipo?</label>
+                <textarea id="porque-voluntario" name="porque"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+        </form>
+    </div>
+</div>
+
+<div id="modal-confirmacion-voluntario" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModalConfirmacion()">&times;</span>
+        <h2>¡Solicitud Enviada!</h2>
+        <p id="modal-mensaje-confirmacion"></p>
+        <button onclick="cerrarModalConfirmacion()">Cerrar</button>
+    </div>
+</div>
+
+
 
         <section id="comentarios" class="nutricion-contenedor">
     <h1 class="nutricion-titulo-principal">Sugerencias</h1>
@@ -2039,6 +2104,32 @@
         });
     });
     </script>
+    <script>
+    function abrirModalVoluntario() {
+        document.getElementById("modal-voluntario").style.display = "flex";
+    }
+
+    function cerrarModalVoluntario() {
+        document.getElementById("modal-voluntario").style.display = "none";
+    }
+
+    function cerrarModalConfirmacion() {
+        document.getElementById("modal-confirmacion-voluntario").style.display = "none";
+    }
+
+    document.getElementById('voluntario-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        var nombre = document.getElementById("nombre-voluntario").value;
+        var mensajeModal = "¡Gracias por tu solicitud, " + nombre + "! Hemos recibido tus datos y nos pondremos en contacto contigo pronto.";
+
+        cerrarModalVoluntario();
+        document.getElementById("modal-mensaje-confirmacion").innerText = mensajeModal;
+        document.getElementById("modal-confirmacion-voluntario").style.display = "flex";
+        
+        this.reset();
+    });
+</script>
 
     
 </body>

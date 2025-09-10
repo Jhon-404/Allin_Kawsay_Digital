@@ -49,7 +49,7 @@
         </div>
         <a href="#formulario" class="boton-cabecera">YANAPAKUY MAÑAKUY</a>
         <a href="index.html" class="boton-cabecera">
-            <img src="icoci.png" class="logo-im"> SIMITA TIKRAY
+            <img src="icoci.png" class="logo-im"> CAMBIAR IDIOMA
         </a>
     </nav>
 </header>
@@ -1514,24 +1514,87 @@
     
         </section>
         <section id="aliados" class="nutricion-contenedor">
-    <h1 class="nutricion-titulo-principal">Qutuykuman huñukamuy</h1>
-    
+    <h1 class="nutricion-titulo-principal">Llamk'aqkunaman huñukuy</h1>
 
     <div class="aliados-card">
-        <h2>Yanapayniykiqa ancha chaniyuqmi ayllunchikpaq</h2>
-        <p>Pallpatapi allin kawsayta hinaspa allin tarikuyta mask'aspa, comprometisqa profesionalkunawan hinaspa voluntariokunawanmi llank'anchik. Yachayniyki hinaspa kallpaykiqa achka runakunap kawsaynintam tikranman.</p>
-        <p>Sichu saludpi profesional kanki utaq yanapakuyta munanki chayqa, kay proyectoman huñukamunaykipaqmi waqyariyki. Hukllapi, aswan kallpasapa hinaspa allin kawsayniyuq ayllutam ruwasun.</p>
-        <a href="#" class="btn-unete">¡Voluntario kayta munani!</a>
-        
+        <h2>Yanapayniykiqa ancha chaniyuqmi llaqtanchikpaq</h2>
+        <p>Pallpata llaqtapi qhali kawsayta allinchayta maskhaspa, yachaysapa runakunawan yanapakuy munaqkunawanpas llamk'anchik. Yachayniykiwan kallpaykiwanqa achka runap kawsaynintam allinman t'ikrayta atinman.</p>
+        <p>Qhali kawsaymanta yachaq kaspa utaq yanapakuyta munaspa, kay rurayman hamunaykipaqmi waqyaykiku. Huñullaspaqa aswan kallpasapa hinaspa qhali llaqtatam sayarichisun.</p>
+        <button class="btn-unete" onclick="abrirModalVoluntario()">¡Yanapakuyta munani!</button>
+
         <ul class="aliados-list">
-            <li><strong>Hampiqkuna hinaspa enfermerokuna:</strong> Hampiy yanapakuy, consultakuna hinaspa qallariy hampiykunapi yuyaychay quspa.</li>
-            <li><strong>Psicólogokuna hinaspa terapeutakuna:</strong> Sunqu yanapay hinaspa yuyay allin kawsaypaq tallerkuna quspa.</li>
-            <li><strong>Nutricionistakuna:</strong> Ayllukunata yanapaspa allin mikhuy planikuna ruwanankupaq.</li>
-            <li><strong>Yachachiqkuna:</strong> Allin kawsay yachaykunamanta rimaykuna hinaspa tallerkuna quspa ayllupi.</li>
-            <li><strong>Ayllumanta voluntariokuna:</strong> Eventokuna organizaypi, willakuykuna mast'ariy hinaspa logística nisqapi yanapaspa.</li>
+            <li><strong>Hampiqkuna hinaspa Hampiq yanapaqkuna:</strong> Hampiypi yanapaspa, tapukuykunata kutichispa hinaspa ñawpaq yanapaykunamanta yachachispa.</li>
+            <li><strong>Yuyay yachaqkuna hinaspa Hampichiqkuna:</strong> Sunqu kallpachayta quspa hinaspa allin yuyay kawsaypaq yachachiykunata quspa.</li>
+            <li><strong>Mikhuna yachaqkuna:</strong> Ayllukunata yanapaspa allin mikhuna ñankunata ruwanankupaq.</li>
+            <li><strong>Yachachiqkuna:</strong> Llaqtapi rimanakuykunata hinaspa yachachiykunata quspa qhali kawsay yachaykunamanta.</li>
+            <li><strong>Llaqtamanta yanapakuqkuna:</strong> Ruraykunata wakichinapi yanapaspa, willakuykunata mast'arispa hinaspa llamk'aykunata allichaspa.</li>
         </ul>
     </div>
-        </section>
+</section>
+
+<div id="modal-voluntario" class="modal">
+    <div class="modal-contenido" style="max-width: 500px; max-height: 90vh; overflow-y: auto;">
+        <span class="cerrar" onclick="cerrarModalVoluntario()">&times;</span>
+        <h2>Yanapakuypaq Hunt'ana P'anqa</h2>
+        <p>¡Añay! Huñunakunaykita munasqaykimanta. Ama hina kaspa, kay hunt'ana p'anqata hunt'ay.</p>
+
+        <form id="voluntario-form" class="comentarios-form" style="padding: 0; box-shadow: none;">
+            <div class="form-group">
+                <label for="nombre-voluntario">Sutiyki hunt'asqa (Hunt'anayki):</label>
+                <input type="text" id="nombre-voluntario" name="nombre" required>
+            </div>
+             <div class="form-group">
+                <label for="dni-voluntario">DNI (Hunt'anayki):</label>
+                <input type="text" id="dni-voluntario" name="dni" pattern="\d{8}" title="Pusaq yupayniyuq kanan" required>
+            </div>
+            <div class="form-group">
+                <label for="email-voluntario">Chaski qillqa (Hunt'anayki):</label>
+                <input type="email" id="email-voluntario" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono-voluntario">Karu rimana / Wayra karu rimana:</label>
+                <input type="tel" id="telefono-voluntario" name="telefono">
+            </div>
+
+            <div class="form-group">
+                <label for="area-voluntario">Maypi yanapakuyta munanki (Hunt'anayki):</label>
+                <div class="custom-select-wrapper">
+                    <select id="area-voluntario" name="area" required>
+                        <option value="" disabled selected>Akllay maypi yanapakuyta</option>
+                        <option value="medicos">Hampiqkuna hinaspa Hampiq yanapaqkuna</option>
+                        <option value="psicologos">Yuyay yachaqkuna hinaspa Hampichiqkuna</option>
+                        <option value="nutricionistas">Mikhuna yachaqkuna</option>
+                        <option value="educadores">Yachachiqkuna</option>
+                        <option value="comunidad">Llaqtamanta yanapakuq</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="como-ayudar-voluntario">¿Imaynatam yanapakuyta munawaq?</label>
+                <textarea id="como-ayudar-voluntario" name="como-ayudar" placeholder="Kayhina: Rimanakuykunata quspa, yanapay ruraykunapi, hukkunapiwan."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="porque-voluntario">¿Imanasqataq llamk'aqkunaman huñukuyta munawaq?</label>
+                <textarea id="porque-voluntario" name="porque"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-enviar">Mañakuyta Kachay</button>
+        </form>
+    </div>
+</div>
+
+<div id="modal-confirmacion-voluntario" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModalConfirmacion()">&times;</span>
+        <h2>¡Mañakuy kachasqaña!</h2>
+        <p id="modal-mensaje-confirmacion"></p>
+        <button onclick="cerrarModalConfirmacion()">Wichq'ay</button>
+    </div>
+</div>
+
+
 
         <section id="comentarios" class="nutricion-contenedor">
     <h1 class="nutricion-titulo-principal">Rimariykuna</h1>
@@ -2043,6 +2106,32 @@
         });
     });
     </script>
+    <script>
+    function abrirModalVoluntario() {
+        document.getElementById("modal-voluntario").style.display = "flex";
+    }
+
+    function cerrarModalVoluntario() {
+        document.getElementById("modal-voluntario").style.display = "none";
+    }
+
+    function cerrarModalConfirmacion() {
+        document.getElementById("modal-confirmacion-voluntario").style.display = "none";
+    }
+
+    document.getElementById('voluntario-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        var nombre = document.getElementById("nombre-voluntario").value;
+        var mensajeModal = "¡Añay mañakusqaykimanta, " + nombre + "! Willakuyniykikunata chaskiykuña, utqaymanmi qanwan rimaykamusaqku.";
+
+        cerrarModalVoluntario();
+        document.getElementById("modal-mensaje-confirmacion").innerText = mensajeModal;
+        document.getElementById("modal-confirmacion-voluntario").style.display = "flex";
+        
+        this.reset();
+    });
+</script>
 
     
 </body>

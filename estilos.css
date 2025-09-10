@@ -1463,3 +1463,42 @@ button:hover {
         font-size: 1.4em;
     }
 }
+
+
+
+    .custom-select-wrapper {
+        position: relative;
+        width: 100%;
+    }
+    .custom-select-wrapper select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 1em;
+        color: #333;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .custom-select-wrapper select:invalid,
+    .custom-select-wrapper select option[value=""] {
+        color: #888;
+    }
+    .custom-select-wrapper::after {
+        content: '▼';
+        font-size: 16px;
+        color: #2A5D84;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+    .custom-select-wrapper select:focus {
+        outline: none;
+        border-color: #3E8ACC;
+        box-shadow: 0 0 0 3px rgba(62, 138, 204, 0.2);
+    }
