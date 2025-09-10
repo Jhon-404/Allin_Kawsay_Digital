@@ -1496,9 +1496,17 @@ button:hover {
     }
 }
 
-@media (max-width: 480px) {
-    /* Oculta el texto en pantallas muy pequeñas para no saturar el header */
-    .logo-texto {
-        display: none;
-    }
+
+
+/* Estilos para pantallas de escritorio (se verá por defecto) */
+.descarga-apk-escritorio {
+  /* Puedes agregar estilos para escritorio aquí si lo necesitas */
+  text-align: center; /* Ejemplo */
+}
+
+/* Media Query para ocultar en móviles y tablets */
+@media (max-width: 768px) {
+  .descarga-apk-escritorio {
+    display: none;
+  }
 }
